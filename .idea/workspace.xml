@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="06710084-38d1-44df-b7ed-90ccbecda840" name="Default" comment="Init Commit">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTMLParseModule.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/schema.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/app_js.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/app_js.xml" />
+    <list default="true" id="06710084-38d1-44df-b7ed-90ccbecda840" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/schema.js" afterPath="$PROJECT_DIR$/routes/schema.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="b8a6b9c0-3180-4a75-a5f0-015ecb491aed" name="New changelist" comment="New changelist" />
@@ -45,7 +42,7 @@
       <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="152" column="32" selection-start="4241" selection-end="4258" vertical-scroll-proportion="0.0" vertical-offset="2051" max-vertical-offset="23385">
+            <state line="193" column="18" selection-start="5299" selection-end="5299" vertical-scroll-proportion="0.0" vertical-offset="2681" max-vertical-offset="23370">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -53,10 +50,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HTMLParseModule.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="HTMLParseModule.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HTMLParseModule.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="1" selection-start="522" selection-end="522" vertical-scroll-proportion="0.24271844" vertical-offset="320" max-vertical-offset="1410">
+            <state line="56" column="20" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="1410">
               <folding>
                 <marker date="1399798494958" expanded="true" signature="836:844" placeholder="..." />
                 <marker date="1399798494958" expanded="true" signature="955:972" placeholder="..." />
@@ -66,10 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="schema.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="schema.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/schema.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="2" selection-start="617" selection-end="617" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1530">
+            <state line="124" column="12" selection-start="3011" selection-end="3011" vertical-scroll-proportion="0.92718446" vertical-offset="905" max-vertical-offset="1950">
               <folding />
             </state>
           </provider>
@@ -94,10 +91,10 @@
       <list>
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/routes/schema.js" />
-        <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/HTMLParseModule.js" />
+        <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/routes/schema.js" />
       </list>
     </option>
   </component>
@@ -291,7 +288,11 @@
       <created>1399745227358</created>
       <updated>1399745227358</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Schema, Index, ParseModule">
+      <created>1399798552873</created>
+      <updated>1399798552873</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -299,12 +300,12 @@
     <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923368" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923368" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24960506" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24960506" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -331,7 +332,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Init Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init Commit" />
+    <MESSAGE value="Schema, Index, ParseModule" />
+    <option name="LAST_COMMIT_MESSAGE" value="Schema, Index, ParseModule" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -372,15 +374,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="32" selection-start="4241" selection-end="4258" vertical-scroll-proportion="0.0" vertical-offset="2051" max-vertical-offset="23385">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="273" column="24" selection-start="7628" selection-end="7628" vertical-scroll-proportion="0.0" vertical-offset="3725" max-vertical-offset="4935">
@@ -390,21 +383,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/schema.js">
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="2" selection-start="617" selection-end="617" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1530">
-          <folding />
+        <state line="193" column="18" selection-start="5299" selection-end="5299" vertical-scroll-proportion="0.0" vertical-offset="2681" max-vertical-offset="23370">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HTMLParseModule.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="1" selection-start="522" selection-end="522" vertical-scroll-proportion="0.24271844" vertical-offset="320" max-vertical-offset="1410">
+        <state line="56" column="20" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="1410">
           <folding>
             <marker date="1399798494958" expanded="true" signature="836:844" placeholder="..." />
             <marker date="1399798494958" expanded="true" signature="955:972" placeholder="..." />
             <marker date="1399798494958" expanded="true" signature="1072:1098" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="12" selection-start="3011" selection-end="3011" vertical-scroll-proportion="0.92718446" vertical-offset="905" max-vertical-offset="1950">
+          <folding />
         </state>
       </provider>
     </entry>

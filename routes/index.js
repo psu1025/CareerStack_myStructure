@@ -196,7 +196,6 @@ exports.postCareer = function(req, res){
 
 }
 
-
 exports.signUser = function(req, res){
     var result = 999;
     var data = {};

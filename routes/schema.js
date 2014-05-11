@@ -36,6 +36,33 @@ var peopleSchema = mongoose.Schema({
   contact:{type:String, default:null}
 });
 
+var careerSchema = mongoose.Schema({
+    user_id:ObjectId,
+    name: String,
+    classify: String,
+    type: String,
+
+    attribute: MixedType,
+
+    size:{
+        height:Number,
+        width:Number
+    },
+
+    write_time:{type:Date, default:Date.now},
+    edit_time:{type:Date,default:null}
+});
+
+var templateSchema = mongoose.Schema({
+    user_id:ObjectId,
+    name:String,
+    structure:MixedType,
+    exampleUrl:{
+        url:{type:String, default:null},
+        visible:{type:Boolean, default:true}
+    }
+});
+
 var userSchema = mongoose.Schema({
   //필수항목
   email: String,
@@ -95,3 +122,4 @@ module.exports.scActivityTemplete = mongoose.model('activitytempletes', activity
 module.exports.scResume = mongoose.model('Resume', resumeSchema);
 module.exports.scEvent = mongoose.model('Event', eventSchema);
 module.exports.testSc = mongoose.model('test', testSchema);
+module.exports.scCareer = mongoose.model('Career', careerSchema);
