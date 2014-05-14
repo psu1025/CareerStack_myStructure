@@ -2,8 +2,744 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06710084-38d1-44df-b7ed-90ccbecda840" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/ayasofia (1).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/large/ayasofia (1).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/medium/ayasofia (1).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/small/ayasofia (1).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/thumbnail/ayasofia (1).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/ayasofia (2).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/large/ayasofia (2).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/medium/ayasofia (2).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/small/ayasofia (2).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/thumbnail/ayasofia (2).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/ayasofia (3).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/large/ayasofia (3).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/medium/ayasofia (3).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/small/ayasofia (3).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/thumbnail/ayasofia (3).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/ayasofia.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/large/ayasofia.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/medium/ayasofia.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/small/ayasofia.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/thumbnail/ayasofia.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/resource/images/main/background.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/fixture/file/beta-sticker-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/fixture/file/binaryfile.tar.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/fixture/file/blank.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/blue_mosque.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/large/blue_mosque.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/medium/blue_mosque.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/small/blue_mosque.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/thumbnail/blue_mosque.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/ext/win32/ia32/bson.node" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/resource/images/main/btn_join.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/resource/images/main/btn_login.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/support/sandbox-template/file" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/resource/images/main/input_email.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/resource/images/main/input_pwd.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/tools/jasmine-1.1.0/jasmine_favicon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/resource/images/main/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/fixture/file/menu_separator.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/topkapi2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/large/topkapi2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/medium/topkapi2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/small/topkapi2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/thumbnail/topkapi2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/turkish_deligh2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/large/turkish_deligh2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/medium/turkish_deligh2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/small/turkish_deligh2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/uploads/location/thumbnail/turkish_deligh2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/.bowerrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/node_modules/nan/.dntrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/ms/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/.jshintignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/node_modules/passport-strategy/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/passport-strategy/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpromise/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/.ndocrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/easyimage/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/imagemagick/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/hooks/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpath/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpromise/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mquery/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/muri/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/regexp-clone/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/sliced/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/node-uuid/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/pause/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/util/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/.sauce-labs.creds" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/async/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/node_modules/minimist/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpath/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpromise/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mquery/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/muri/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/regexp-clone/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/sliced/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/node_modules/passport-strategy/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/passport-strategy/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/util/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/.vimrc-local" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/util/.zuul.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/easyimage/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/HISTORY.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/crypto/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpath/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpromise/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mquery/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/muri/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/regexp-clone/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/sliced/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/pause/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/node-uuid/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/node_modules/lodash/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/lodash/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/async/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/node_modules/async/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/node_modules/minimist/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/node_modules/nan/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpath/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpromise/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mquery/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/muri/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/regexp-clone/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/sliced/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/node_modules/passport-strategy/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/passport-strategy/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/util/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/util/node_modules/inherits/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/tools/jasmine-1.1.0/MIT.LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/ext/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/hooks/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpath/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mquery/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/ms/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/muri/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/regexp-clone/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/sliced/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/pause/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpromise/.idea/libraries/Node_js_Dependencies_for_mpromise.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpromise/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/async/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/easyimage/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/node_modules/async/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/node_modules/lodash/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/imagemagick/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/lodash/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/node_modules/nan/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/hooks/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpath/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpromise/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mquery/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/ms/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/muri/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/regexp-clone/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/sliced/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/node-uuid/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/node-uuid/benchmark/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/node_modules/passport-strategy/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/passport-strategy/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/util/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/util/node_modules/inherits/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/crypto/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/pause/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/drivers/SPEC.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/admin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/aggregate/aggregate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/aggregate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/collection/aggregation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/aggregation_cursor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/ar-ma.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/schema/array.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/types/array.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/async/lib/async.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/node_modules/async/lib/async.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/lib/middleware/authenticate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/lib/errors/authenticationerror.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/lib/authenticator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/connection/base.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/base64.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/win32/base64.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/base64.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/win32/base64.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/tools/base64.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/commands/base_command.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/benchmark/bench-multipart-parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/node-uuid/benchmark/bench.gnu" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/sliced/bench.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/node-uuid/benchmark/bench.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/node-uuid/benchmark/benchmark-native.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/node-uuid/benchmark/benchmark.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/lib/bson/binary.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/drivers/node-mongodb-native/binary.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/lib/bson/binary_parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/binding.gyp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/binding.gyp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/schema/boolean.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/br.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mquery/test/collection/browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/bs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/ext/bson.cc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/ext/bson.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/browser_build/bson.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/lib/bson/bson.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/lib/bson/bson_new.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/schema/buffer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/types/buffer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/build_browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/error/cast.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/tasks/check_sauce_creds.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/test/chmod.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/gridfs/chunk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/test/clobber.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/lib/bson/code.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpromise/.idea/codeStyleSettings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/collection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/collection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mquery/lib/collection/collection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/command_cursor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/collection/commands.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/legacy/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/collection/batch/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/node-uuid/test/compare_v1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/tasks/component.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/async/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/node_modules/async/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/sliced/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/node-uuid/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/lib/framework/connect.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/connection/connection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/connection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/connection/connection_pool.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/connection/connection_utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/connectionstate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/contRun.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/test/copy-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/collection/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/cursor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/cursorstream.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/cv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/cy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/node_modules/minimist/test/dash.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/schema/date.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/db.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/commands/db_command.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/lib/bson/db_ref.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/util/test/node/debug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/node_modules/minimist/test/default_bool.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/commands/delete_command.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/error/divergentArray.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/doc-methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/document.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/schema/documentarray.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/types/documentarray.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/node_modules/minimist/test/dotted.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/lib/bson/double.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/easyimage/easyimage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/tasks/embed_languages.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/types/embedded.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/en-au.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/en-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/en-gb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/fixture/js/encoding.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpromise/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/ender.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mquery/lib/env.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mquery/test/env.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/eo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/error.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/eu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/f.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/lib/file.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/support/sandbox-template/foo/file" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/support/sandbox-template/foo/bar/file" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/support/sandbox-template/foo/bar/baz/file" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/scripts/file_upload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/lib/filehandler.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/lib/fileinfo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/lib/filemanager.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/test/find-sorted-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/lib/bson/float_parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/fo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/foo.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/views/form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/util/test/node/format.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/fr-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/lib/fs-tools.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/fixture/file/funkyfilename.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/collection/geo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/geospatial/geoJSONSchema.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/geospatial/geoJSONexample.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/geospatial/geospatial.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/commands/get_more_command.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/tools/gleak.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/gridfs/grid.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/gridfs/gridstore.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/globalschemas/gs_example.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/connection/repl_set/ha.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/test/helper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/hi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/tasks/history.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/hooks/hooks.alt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/hooks/hooks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/hy-am.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/imagemagick/imagemagick.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/node_modules/nan/include_dirs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/lib/incoming_form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/ms/test/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/lib/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/node_modules/minimist/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/collection/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/ext/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/lib/bson/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/schema/storing-schemas-as-json/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/schema/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/types/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpath/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpath/lib/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpath/test/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpromise/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mquery/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mquery/lib/collection/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mquery/test/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/muri/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/muri/lib/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/muri/test/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/regexp-clone/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/regexp-clone/test/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/sliced/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/sliced/test/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/lib/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/node_modules/passport-strategy/lib/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/lib/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/passport-strategy/lib/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/pause/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/fixture/http/special-chars-in-filename/info.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/util/node_modules/inherits/inherits.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/util/node_modules/inherits/inherits_browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/lib/middleware/initialize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/commands/insert_command.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/util/test/browser/inspect.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/util/test/node/inspect.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/internal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/is.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/util/test/browser/is.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/util/support/isBuffer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/util/support/isBufferBrowser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/tools/jasmine-1.1.0/jasmine-html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/tools/jasmine-1.1.0/jasmine.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/tools/jasmine-1.1.0/jasmine.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/ms/test/support/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpromise/.idea/jsLibraryMappings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/example/json.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/lib/json_parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/ka.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/kerberos.cc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/win32/kerberos.cc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/kerberos.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/win32/kerberos.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/kerberos.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/kerberos_context.cc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/kerberos_context.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/win32/kerberos_sspi.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/win32/kerberos_sspi.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/test/kerberos_tests.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/test/kerberos_win32_test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/kerberosgss.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/kerberosgss.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/commands/kill_cursor_command.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/km.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/min/langs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/min/langs.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/lb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/lean/lean.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/node_modules/lodash/lodash.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/lodash/lodash.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/util/test/node/log.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/node_modules/minimist/test/long.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/lib/bson/long.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/main.jade" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/mapreduce/mapreduce.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/lib/bson/max_key.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/crypto/md5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/error/messages.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/lib/bson/min_key.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/fixture/js/misc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpromise/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/error/missingSchema.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/schema/mixed.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/mk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/test/mkdir-sync-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/test/mkdir-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/.bin/mkdirp.cmd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/test/mkdirp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/.bin/mkdirp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/ml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/model.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpromise/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/min/moment-with-langs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/min/moment-with-langs.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/moment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/min/moment.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mquery/test/collection/mongo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/mongo_client.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/responses/mongo_reply.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/auth_processes/mongodb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/auth/mongodb_cr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/auth/mongodb_gssapi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/auth/mongodb_plain.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/auth/mongodb_sspi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/auth/mongodb_x509.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/connection/mongos.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/test/move-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpromise/.idea/mpromise.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mquery/lib/mquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/mr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/ms-my.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/ms/ms.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/fixture/multipart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/lib/multipart_parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/node_modules/nan/nan.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/nb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/ne.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/nn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/fixture/js/no-filename.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mquery/lib/collection/node.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mquery/test/collection/node.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/schema/number.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/lib/bson/objectid.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/drivers/node-mongodb-native/objectid.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/schema/objectid.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/types/objectid.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/lib/octet_parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/connection/repl_set/options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/test/opts_fs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/test/opts_fs_sync.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/collection/batch/ordered.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpromise/.idea/other.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/error/overwriteModel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/package.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/async/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/crypto/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/easyimage/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/node_modules/async/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/node_modules/lodash/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/imagemagick/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/lodash/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/node_modules/minimist/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/browser_build/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/node_modules/nan/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/aggregate/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/geospatial/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/lean/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/mapreduce/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/promises/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/querybuilder/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/replicasets/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/hooks/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpath/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpromise/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mquery/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/ms/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/muri/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/regexp-clone/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/sliced/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/node-uuid/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/node_modules/passport-strategy/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/passport-strategy/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/pause/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/path/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/util/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/util/node_modules/inherits/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/node_modules/minimist/example/parse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/node_modules/minimist/test/parse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/node_modules/minimist/test/parse_modified.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/path/path.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/test/perm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/test/perm_sync.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mquery/lib/permissions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/aggregate/person.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/geospatial/person.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/globalschemas/person.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/lean/person.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/mapreduce/person.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/promises/person.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/querybuilder/person.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/replicasets/person.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/statics/person.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/connection/repl_set/strategies/ping_strategy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/fixture/file/plain.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/population/population-across-three-collections.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/population/population-basic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/population/population-of-existing-doc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/population/population-of-multiple-existing-docs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/population/population-options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/population/population-plain-objects.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/example/post.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/examples/pow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/fixture/js/preamble.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpromise/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpromise/test/promise.domain.test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/promises/promise.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/promise.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpromise/lib/promise.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpromise/test/promise.test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpromise/test/promises.Aplus.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/pt-br.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/collection/query.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/query.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/commands/query_command.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/querybuilder/querybuilder.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/queryhelpers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/querystream.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/lib/querystring_parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/test/race.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/connection/read_preference.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/readme.markdown" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/node_modules/minimist/readme.markdown" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/gridfs/readstream.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/tool/record.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/test/rel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/release-items.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/test/remove-sync-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/test/remove-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/connection/repl_set/repl_set.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/connection/repl_set/repl_set_state.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/replicasets/replica-sets.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/lib/http/request.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/test/return.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/test/return_sync.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/test/root.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/run.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/schema/schema.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/schema.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/schema/storing-schemas-as-json/schema.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/schemadefault.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/schematype.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/scope.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpromise/.idea/scopes/scope_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/win32/wrappers/security_buffer.cc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/win32/wrappers/security_buffer.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/win32/wrappers/security_buffer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/win32/wrappers/security_buffer_descriptor.cc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/win32/wrappers/security_buffer_descriptor.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/win32/wrappers/security_buffer_descriptor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/test/win32/security_buffer_descriptor_tests.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/test/win32/security_buffer_tests.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/win32/wrappers/security_context.cc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/win32/wrappers/security_context.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/win32/wrappers/security_context.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/win32/wrappers/security_credentials.cc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/win32/wrappers/security_credentials.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/win32/wrappers/security_credentials.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/test/win32/security_credentials_tests.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/connection/server.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/connection/server_capabilities.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/lib/strategies/session.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/crypto/sha1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/collection/shared.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/node_modules/minimist/test/short.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/tasks/size.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/sl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/sliced/lib/sliced.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/fixture/js/special-chars-in-filename.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/sq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/sr-cyr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/sr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/sspi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/statemachine.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/static.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/examples/statics/statics.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/connection/repl_set/strategies/statistics_strategy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/lib/strategy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/node_modules/passport-strategy/lib/strategy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/passport-strategy/lib/strategy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/schema/string.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/examples/public/styles/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/lib/bson/symbol.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/test/sync.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/t" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/ta.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/standalone/test-connection-aborted.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/standalone/test-content-transfer-encoding.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/imagemagick/test-crop.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/crypto/test/test-crypto.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/legacy/simple/test-file.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/unit/test-file.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/integration/test-fixtures.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/legacy/simple/test-incoming-form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/unit/test-incoming-form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/standalone/test-issue-46.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/integration/test-json.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/legacy/system/test-multi-video-upload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/legacy/integration/test-multipart-parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/legacy/simple/test-multipart-parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/integration/test-octet-stream.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/legacy/simple/test-querystring-parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/node-uuid/test/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/easyimage/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/imagemagick/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/hooks/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/ms/test/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/node-uuid/test/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/util/node_modules/inherits/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/min/tests.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/lib/bson/timestamp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/tl-ph.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/test/tmpdir-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/tzm-la.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/tzm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/test/umask.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/test/umask_sync.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/collection/batch/unordered.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/commands/update_command.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/example/upload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/lib/uploadhandler.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/connection/url_parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/util/util.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/util/test/node/util.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mquery/lib/utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/lib/utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mquery/test/utils.test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/node-uuid/uuid.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/uz.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/v8.result" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/error/validation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/error/validator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpromise/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/error/version.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/viewRoute.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/virtualtype.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/test/walk-sync-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-tools/test/walk-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/website.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/mkdirp/node_modules/minimist/test/whitespace.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-file-upload-middleware/node_modules/formidable/test/fixture/js/workarounds.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/worker.cc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/win32/worker.cc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/worker.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/kerberos/lib/win32/worker.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpromise/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/ext/wscript" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/zh-cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/lang/zh-tw.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/moment/tasks/zones.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.jade" afterPath="$PROJECT_DIR$/views/layout.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/schema.js" afterPath="$PROJECT_DIR$/routes/schema.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/style.css" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="b8a6b9c0-3180-4a75-a5f0-015ecb491aed" name="New changelist" comment="New changelist" />
@@ -31,42 +767,34 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="273" column="24" selection-start="7628" selection-end="7628" vertical-scroll-proportion="0.0" vertical-offset="3545" max-vertical-offset="4935">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state line="289" column="47" selection-start="8076" selection-end="8076" vertical-scroll-proportion="0.0" vertical-offset="4335" max-vertical-offset="5040">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <file leaf-file-name="viewRoute.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/viewRoute.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="193" column="18" selection-start="5299" selection-end="5299" vertical-scroll-proportion="0.0" vertical-offset="2681" max-vertical-offset="23370">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state line="33" column="36" selection-start="1252" selection-end="1252" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HTMLParseModule.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HTMLParseModule.js">
+      <file leaf-file-name="main.jade" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/main.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="20" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="1410">
-              <folding>
-                <marker date="1399798494958" expanded="true" signature="836:844" placeholder="..." />
-                <marker date="1399798494958" expanded="true" signature="955:972" placeholder="..." />
-                <marker date="1399798494958" expanded="true" signature="1072:1098" placeholder="..." />
-              </folding>
+            <state line="15" column="18" selection-start="397" selection-end="397" vertical-scroll-proportion="0.34246576" vertical-offset="0" max-vertical-offset="657">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="schema.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/routes/schema.js">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="12" selection-start="3011" selection-end="3011" vertical-scroll-proportion="0.92718446" vertical-offset="905" max-vertical-offset="1950">
+            <state line="56" column="59" selection-start="986" selection-end="986" vertical-scroll-proportion="0.0" vertical-offset="233" max-vertical-offset="975">
               <folding />
             </state>
           </provider>
@@ -90,11 +818,15 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/HTMLParseModule.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/views/layout.jade" />
         <option value="$PROJECT_DIR$/routes/schema.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/routes/viewRoute.js" />
+        <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
+        <option value="$PROJECT_DIR$/views/main.jade" />
       </list>
     </option>
   </component>
@@ -103,6 +835,25 @@
     <option name="y" value="22" />
     <option name="width" value="1936" />
     <option name="height" value="1186" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>File Watchers</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>TaskInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -130,6 +881,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -158,7 +910,65 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CareerStack_myStructure" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CareerStack_myStructure" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="routes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CareerStack_myStructure" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CareerStack_myStructure" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CareerStack_myStructure" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CareerStack_myStructure" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -200,7 +1010,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -215,6 +1024,7 @@
       <recent name="D:\WebstormDevelopment\CareerStack_myStructure\routes" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WebstormDevelopment\CareerStack_myStructure\public\resource\images\main" />
       <recent name="D:\WebstormDevelopment\CareerStack_myStructure\public\images\User" />
     </key>
   </component>
@@ -292,31 +1102,35 @@
       <created>1399798552873</created>
       <updated>1399798552873</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add Career Schema">
+      <created>1399841867612</created>
+      <updated>1399841867612</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1936" height="1186" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923368" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32923368" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923368" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24960506" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923368" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282876" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923368" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -333,79 +1147,144 @@
     </option>
     <MESSAGE value="Init Commit" />
     <MESSAGE value="Schema, Index, ParseModule" />
-    <option name="LAST_COMMIT_MESSAGE" value="Schema, Index, ParseModule" />
+    <MESSAGE value="Add Career Schema" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Career Schema" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="2" selection-start="1805" selection-end="1805" vertical-scroll-proportion="0.0" vertical-offset="1835" max-vertical-offset="3315">
+        <state line="289" column="47" selection-start="8076" selection-end="8076" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5040">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/.bin/express">
+    <entry file="file://$PROJECT_DIR$/routes/viewRoute.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="2" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+        <state line="33" column="36" selection-start="1252" selection-end="1252" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="630">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/.bin/express.cmd">
+    <entry file="file://$PROJECT_DIR$/views/main.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1030">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="17" selection-start="409" selection-end="409" vertical-scroll-proportion="0.29821074" vertical-offset="0" max-vertical-offset="1006">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/NodeJS/lib/NodeJS.jar!/com/jetbrains/nodejs/library/node_globals.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="4" selection-start="1715" selection-end="1715" vertical-scroll-proportion="0.33333334" vertical-offset="426" max-vertical-offset="12795">
+        <state line="11" column="0" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="273" column="24" selection-start="7628" selection-end="7628" vertical-scroll-proportion="0.0" vertical-offset="3725" max-vertical-offset="4935">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state line="273" column="24" selection-start="7628" selection-end="7628" vertical-scroll-proportion="0.0" vertical-offset="3545" max-vertical-offset="4935">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="193" column="18" selection-start="5299" selection-end="5299" vertical-scroll-proportion="0.0" vertical-offset="2681" max-vertical-offset="23370">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HTMLParseModule.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="20" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="1410">
-          <folding>
-            <marker date="1399798494958" expanded="true" signature="836:844" placeholder="..." />
-            <marker date="1399798494958" expanded="true" signature="955:972" placeholder="..." />
-            <marker date="1399798494958" expanded="true" signature="1072:1098" placeholder="..." />
-          </folding>
-        </state>
+        <state line="56" column="20" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="1410" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/schema.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="12" selection-start="3011" selection-end="3011" vertical-scroll-proportion="0.92718446" vertical-offset="905" max-vertical-offset="1950">
+        <state line="120" column="25" selection-start="2738" selection-end="2738" vertical-scroll-proportion="0.0" vertical-offset="905" max-vertical-offset="1950" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="147" column="2" selection-start="1805" selection-end="1805" vertical-scroll-proportion="0.0" vertical-offset="1835" max-vertical-offset="3315" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/.bin/express">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="2" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/.bin/express.cmd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1030" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="17" selection-start="409" selection-end="409" vertical-scroll-proportion="0.29821074" vertical-offset="0" max-vertical-offset="1006" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1030" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="126" column="70" selection-start="3136" selection-end="3136" vertical-scroll-proportion="0.0" vertical-offset="1298" max-vertical-offset="1980" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="251" column="0" selection-start="5561" selection-end="5561" vertical-scroll-proportion="0.3841642" vertical-offset="3503" max-vertical-offset="4185" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLParseModule.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="20" selection-start="797" selection-end="797" vertical-scroll-proportion="0.6744868" vertical-offset="380" max-vertical-offset="1410" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/NodeJS/lib/NodeJS.jar!/com/jetbrains/nodejs/library/node_globals.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="4" selection-start="1715" selection-end="1715" vertical-scroll-proportion="0.33333334" vertical-offset="426" max-vertical-offset="12795" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="23" selection-start="65" selection-end="65" vertical-scroll-proportion="-2.4" vertical-offset="0" max-vertical-offset="150" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="289" column="47" selection-start="8076" selection-end="8076" vertical-scroll-proportion="0.0" vertical-offset="3801" max-vertical-offset="4935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="185" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="180" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="21" selection-start="636" selection-end="636" vertical-scroll-proportion="0.32991204" vertical-offset="0" max-vertical-offset="23265">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/viewRoute.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="36" selection-start="1252" selection-end="1252" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="59" selection-start="986" selection-end="986" vertical-scroll-proportion="0.0" vertical-offset="233" max-vertical-offset="975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/main.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="18" selection-start="397" selection-end="397" vertical-scroll-proportion="0.34246576" vertical-offset="0" max-vertical-offset="657">
           <folding />
         </state>
       </provider>

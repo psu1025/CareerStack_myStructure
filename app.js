@@ -24,6 +24,7 @@ var crypto = require('crypto'),
     uuid = require('node-uuid');
 
 var schema = require('./routes/schema.js');
+var view = require('./routes/viewRoute.js');
 
 ////////////////////////////////////////////////
 //Server Configuration
@@ -282,6 +283,12 @@ app.post('/api/template');
 app.delete('/api/template/:template');
 app.put('/api/template/:template');
 app.get('/api/template/:template');
+
+
+////////////////////////////////////////////////
+//View Route Set
+////////////////////////////////////////////////
+app.get('/view/main', view.viewMain);
 
 
 ////User API

@@ -1,8 +1,60 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #2e2e2e;
+  text-align: center;
+  align-items: center;
 }
 
 a {
   color: #00B7FF;
+}
+
+.center{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#container{
+    background-image:url("../resource/images/main/background.png");
+    width: 820px;
+    height: 675px;
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 120px;
+}
+
+#middle{
+    width:215px;
+    text-align: center;
+}
+
+#txt_email{
+    width:215px;
+    height:15px;
+    background-image:url("../resource/images/main/input_email.png");
+    margin-bottom: 10px;
+}
+
+#txt_pwd{
+    width:215px;
+    height:15px;
+    background-image:url("../resource/images/main/input_pwd.png");
+    margin-bottom: 10px;
+}
+
+#btn{
+    text-align: right;
+}
+
+#btn_join{
+    background-image:url("../resource/images/main/btn_join.png");
+    width:38px;
+    height: 18px;
+}
+
+#btn_login{
+    background-image:url("../resource/images/main/btn_login.png");
+    width:38px;
+    height: 18px;
 }

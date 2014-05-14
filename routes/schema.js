@@ -118,8 +118,10 @@ var resumeSchema = mongoose.Schema({
 
 module.exports.scUser = mongoose.model('User', userSchema);
 module.exports.scActivity = mongoose.model('Activity', activitySchema);
-module.exports.scActivityTemplete = mongoose.model('activitytempletes', activityTempleteSchema);
+module.exports.scActivityTemplete = mongoose.model('ActivityTempletes', activityTempleteSchema);
 module.exports.scResume = mongoose.model('Resume', resumeSchema);
 module.exports.scEvent = mongoose.model('Event', eventSchema);
 module.exports.testSc = mongoose.model('test', testSchema);
+
 module.exports.scCareer = mongoose.model('Career', careerSchema);
+module.exports.scTemplete = mongoose.model('Templetes', templateSchema);
