@@ -30,18 +30,11 @@ a {
     text-align: center;
 }
 
-#txt_email{
+#input_txt{
     width:215px;
     height:15px;
-    background-image:url("../resource/images/main/input_email.png");
     margin-bottom: 10px;
-}
-
-#txt_pwd{
-    width:215px;
-    height:15px;
-    background-image:url("../resource/images/main/input_pwd.png");
-    margin-bottom: 10px;
+    text-align: center;
 }
 
 #btn{
