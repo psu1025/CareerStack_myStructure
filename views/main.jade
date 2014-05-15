@@ -3,6 +3,7 @@
 doctype html
 html
     head
+        meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
         title= title
         link(rel='stylesheet', href='/stylesheets/style.css')
         script(type='text/javascript').
@@ -33,8 +34,9 @@ html
                 input(type='text', id='txt_pwd')
                 br
                 #btn
-                    input(type='button',id='btn_join')
-                    input(type='submit',id='btn_login',value='')
+                    a(href='/view/maptest')
+                        img(id='btn_main',src='../resource/images/main/btn_join.png', border='0')
+                    input(id='btn_main',type='image',src='../resource/images/main/btn_login.png',border="0",alt="Submit")
             #info.center
                 p(id="infoText").
                     asdfasdf asdfjaskdlfjal;sdfjaskd asfk;dlj asdfasdklfja;sdfasdf qoiwehznxcvqowenvoiwe vno
