@@ -67,16 +67,16 @@ var parsingStandalone(template){
         data += "<p style='padding: 2px 2px 2px 20px;'>" + template.attribute.memo + "</p>";
     }
     else if(type == "link"){
-
+        //링크일 경우
     }
     else if(type == "file"){
-
+        //파일일 경우
     }
     else if(type == "date"){
-
+        //날짜일 경우
     }
     else{
-
+        //예외
     }
 
     data += "</div>";

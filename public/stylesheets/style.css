@@ -20,8 +20,8 @@ a {
     width: 820px;
     height: 675px;
     text-align: center;
-    margin-top: 100px;
-    padding-top: 120px;
+    margin-top: 150px;
+    padding-top: 190px;
 }
 
 #middle{
@@ -57,4 +57,9 @@ a {
     background-image:url("../resource/images/main/btn_login.png");
     width:38px;
     height: 18px;
+}
+
+#infoText{
+    color: #ffffff;
+    line-height: 150%;
 }
