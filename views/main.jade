@@ -24,6 +24,7 @@ html
             })();
     body
         #container.center
+
             #middle.center
                 img(src='../resource/images/main/logo.png')
                 br
@@ -32,11 +33,13 @@ html
                 input(type='text', id='input_txt',placeholder='E-Mail')
                 br
                 input(type='text', id='input_txt',placeholder='Password')
-                br
                 #btn
                     a(href='/view/maptest')
                         img(id='btn_main',src='../resource/images/main/btn_join.png', border='0')
                     input(id='btn_main',type='image',src='../resource/images/main/btn_login.png',border="0",alt="Submit")
+                    a(href='/user/find')
+                        p forgot password?
+
             #info.center
                 p(id="infoText").
                     나의 기록을 담는데 최적화 된 서비스. 포트폴리오, 이력, 여행, 인턴 등 다양한 템플릿이 존재합니다.

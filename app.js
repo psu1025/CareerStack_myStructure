@@ -289,7 +289,10 @@ app.get('/api/template/:template');
 //View Route Set
 ////////////////////////////////////////////////
 app.get('/view/main', view.viewMain);
+app.get('/view/mypage/:user', view.viewMyPage);
+
 app.get('/view/maptest', view.mapTest);
+app.get('/view/testjade', view.testJade);
 
 ////User API
 //app.post('/user', ensureAuthenticatedBranch, routes.signUser);

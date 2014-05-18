@@ -26,14 +26,11 @@ var ACT_FILE_PATH_RES = '/files/Activity/';
 var JADE_PATH = __dirname + '/../views/';
 
 exports.viewMain = function(req, res){
-    fs.readFile(JADE_PATH+'main.jade', 'utf8', function(error, data){
-        var fn = jade.compile(data);
+    res.render(JADE_PATH+'main.jade', {title:'Career Stack'});
+};
 
-        res.writeHead(200, {'Content-type':'text/html'});
-        res.end(fn({
-            title: 'first jade title'
-        }));
-    })
+exports.viewMyPage = function(req, res){
+    res.render(JADE_PATH+'mypage.jade');
 };
 
 exports.mapTest = function(req, res){
@@ -41,4 +38,9 @@ exports.mapTest = function(req, res){
         res.writeHead(200, {'Content-type':'text/html'});
         res.end(data);
     })
-}
+};
+
+exports.testJade = function(req, res){
+    res.render(JADE_PATH+'index.jade');
+};
+

@@ -1,0 +1,41 @@
+//
+   Created by Augustus on 14. 5. 0.
+doctype html
+html
+    head
+        meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+        title= title
+        link(rel='stylesheet', href='/stylesheets/mypage.css')
+        script(type='text/javascript').
+            WebFontConfig = {
+            custom: {
+                families: ['Nanum Gothic'],
+                urls: ['http://fonts.googleapis.com/earlyaccess/nanumgothic.css']
+            }
+            };
+            (function() {
+                var wf = document.createElement('script');
+                wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                    '://ajax.googleapis.com/ajax/libs/webfont/1.4.10/webfont.js';
+                wf.type = 'text/javascript';
+                wf.async = 'true';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(wf, s);
+            })();
+    body
+        #top
+            #top_left
+                img(src='/resource/images/mypage/logo_small.png',id='toplogo')
+            #top_right
+                img(src='/resource/images/mypage/write_career.png',id='write_career')
+                img(src='/resource/images/mypage/config.png',id='config')
+                img(src='/resource/images/mypage/logout.png',id='logout')
+        #introduce
+            #introduce_body
+            #introduce_fold
+                img(src='/resource/images/mypage/fold_up.png', id='fold_up')
+            #introduce_bottom
+        #main
+            #main_left
+            #main_right
+        #bottom
