@@ -75,19 +75,18 @@ a {
 
 #main{
     width:100%;
-    height:inherit;
+    height:100%;
 }
 
 #main_left{
     float: left;
-    width:231px;
+    width:232px;
     height:100%;
     background-image:url("../resource/images/mypage/menu_background.png");
 }
 
 #main_right{
-    margin-left:231px;
+    margin-left:232px;
     height:100%;
-    /*background-image:url("../resource/images/mypage/viewpage_background.png");*/
-    background-color: #e6e6e6;
+    background-color: #f2f2f2;
 }
