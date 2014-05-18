@@ -290,6 +290,7 @@ app.get('/api/template/:template');
 ////////////////////////////////////////////////
 app.get('/view/main', view.viewMain);
 app.get('/view/mypage/:user', view.viewMyPage);
+app.get('/view/join', view.viewJoin);
 
 app.get('/view/maptest', view.mapTest);
 app.get('/view/testjade', view.testJade);

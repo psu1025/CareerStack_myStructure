@@ -24,33 +24,47 @@ a {
     height: 675px;
     text-align: center;
     margin-top: 115px;
-    padding-top: 195px;
+    padding-top: 45px;
 }
 
 #middle{
-    width:215px;
+    width:340px;
     text-align: center;
+}
+
+#middle span{
+    color: #ffffff;
+    padding-right:10px;
+    font-family: "Nanum Gothic", sans-serif;
 }
 
 #input_txt{
     width:215px;
     height:15px;
-    margin-bottom: 10px;
-    text-align: center;
+    text-align: right;
 }
 
 #btn{
     text-align: right;
 }
 
-#btn_main{
-    width:38px;
-    height: 18px;
-    margin-left: 2px;
+#btn_submit{
 }
 
 #infoText{
     color: #ffffff;
     line-height: 150%;
     font-family: "Nanum Gothic", sans-serif;
+}
+
+#input{
+    text-align:left;
+}
+
+#essential{
+    margin-bottom: 30px;
+}
+
+#essential table tr td input{
+    height:20px;
 }
