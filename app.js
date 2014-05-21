@@ -290,6 +290,9 @@ app.post('/test', routes.test);
 ////////////////////////////////////////////////
 //View Route Set
 ////////////////////////////////////////////////
+app.get('/', function(req, res){
+    res.redirect('/view/main');
+});
 app.get('/view/main', view.viewMain);
 app.get('/view/mypage/:user', view.viewMyPage);
 
