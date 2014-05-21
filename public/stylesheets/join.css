@@ -24,7 +24,7 @@ a {
     height: 675px;
     text-align: center;
     margin-top: 115px;
-    padding-top: 45px;
+    padding-top: 100px;
 }
 
 #middle{
@@ -38,10 +38,14 @@ a {
     font-family: "Nanum Gothic", sans-serif;
 }
 
-#input_txt{
+#input_txt, #datepicker{
     width:215px;
     height:15px;
     text-align: right;
+}
+
+#datepicker{
+
 }
 
 #btn{

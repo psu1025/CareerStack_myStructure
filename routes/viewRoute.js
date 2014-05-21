@@ -37,6 +37,11 @@ exports.viewJoin = function(req, res){
     res.render(JADE_PATH+'join.jade');
 };
 
+exports.viewJoinProcess = function(req, res){
+    res.redirect('/view/main');
+};
+
+
 exports.mapTest = function(req, res){
     fs.readFile(JADE_PATH+'maptest.html', 'utf8', function(error, data){
         res.writeHead(200, {'Content-type':'text/html'});

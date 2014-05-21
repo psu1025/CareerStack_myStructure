@@ -5,7 +5,10 @@ html
     head
         meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
         title= title
-        link(rel='stylesheet', href='/stylesheets/join.css')
+        link(rel='stylesheet', href='../stylesheets/join.css')
+        link(rel='stylesheet', href='../stylesheets/pikaday.css')
+        script(src='../javascripts/moment.js')
+        script(src='../javascripts/pikaday.js')
         script(type='text/javascript').
             WebFontConfig = {
             custom: {
@@ -22,6 +25,8 @@ html
                 var s = document.getElementsByTagName('script')[0];
                 s.parentNode.insertBefore(wf, s);
             })();
+
+
     body
         #container.center
             #middle.center
@@ -30,32 +35,44 @@ html
                 br
                 br
                 #input
-                    #essential
-                        table
-                            tr
-                                td
-                                    span 이메일
-                                td
-                                    input(type='text', id='input_txt',placeholder='email@example.com')
-                            tr
-                                td
-                                    span 비밀번호
-                                td
-                                    input(type='text', id='input_txt',placeholder='Password')
-                            tr
-                                td
-                                    span 비밀번호 확인
-                                td
-                                    input(type='text', id='input_txt',placeholder='Retype your password')
-                            tr
-                                td
-                                    span 이름
-                                td
-                                    input(type='text', id='input_txt',placeholder='Your Name')
-                            tr
-                                td
-                                    span 생년
-                                td
-                                    input(type='text', id='input_txt',placeholder='Birth')
-                    #join
-                        input(id='btn_submit',type='image',src='../resource/images/join/join_btn.png',border="0",alt="Submit")
+                    form(action='/view/joinProcess',method='post')
+                        #essential
+                            table
+                                tr
+                                    td
+                                        span 이메일
+                                    td
+                                        input(type='text', id='input_txt',placeholder='email@example.com')
+                                tr
+                                    td
+                                        span 비밀번호
+                                    td
+                                        input(type='password', id='input_txt',placeholder='Password')
+                                tr
+                                    td
+                                        span 비밀번호 확인
+                                    td
+                                        input(type='password', id='input_txt',placeholder='Retype your password')
+                                tr
+                                    td
+                                        span 이름
+                                    td
+                                        input(type='text', id='input_txt',placeholder='Your Name')
+                                tr
+                                    td
+                                        span 생년월일
+                                    td
+                                        input(type='text', id='datepicker',placeholder='Birth', readonly)
+                        #join
+                            input(id='btn_submit',type='image',src='../resource/images/join/join_btn.png',border="0",alt="Submit")
+
+        script(type='text/javascript').
+            // You can get and set dates with moment objects
+            var picker = new Pikaday(
+            {
+                field: document.getElementById('datepicker'),
+                firstDay: 1,
+                minDate: new Date('1960-01-01'),
+                maxDate: new Date('2014-12-31'),
+                yearRange: [1960,2014]
+            });

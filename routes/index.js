@@ -196,6 +196,11 @@ exports.postCareer = function(req, res){
 
 }
 
+exports.test = function(req, res){
+    console.log(util.inspect(req.body.user));
+    res.json({"good":"good"});
+}
+
 exports.signUser = function(req, res){
     var result = 999;
     var data = {};

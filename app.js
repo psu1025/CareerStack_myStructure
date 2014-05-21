@@ -284,16 +284,22 @@ app.delete('/api/template/:template');
 app.put('/api/template/:template');
 app.get('/api/template/:template');
 
+//Test API
+app.post('/test', routes.test);
 
 ////////////////////////////////////////////////
 //View Route Set
 ////////////////////////////////////////////////
 app.get('/view/main', view.viewMain);
 app.get('/view/mypage/:user', view.viewMyPage);
+
 app.get('/view/join', view.viewJoin);
+app.post('/view/joinProcess', view.viewJoinProcess);
 
 app.get('/view/maptest', view.mapTest);
 app.get('/view/testjade', view.testJade);
+
+
 
 ////User API
 //app.post('/user', ensureAuthenticatedBranch, routes.signUser);
