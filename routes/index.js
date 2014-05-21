@@ -213,8 +213,8 @@ exports.signUser = function(req, res){
     }
 
     //data Validate. 없으면 888
-    var bodyData = req.body;
-    if(areEmpty([bodyData.email, bodyData.password, bodyData.name, bodyData.sex]))
+    var bodyData = req.body.user;
+    if(areEmpty([bodyData.email, bodyData.password, bodyData.name, bodyData.birth]))
     {
         data.result = 888;
         res.json(data);
@@ -225,10 +225,10 @@ exports.signUser = function(req, res){
     var userPwd = bodyData.password;
     var userEmail = bodyData.email;
     var userName = bodyData.name;
-    var userSex = bodyData.sex;
+    var userBirth = bodyData.birth;
 
     //이미 이 이메일로 가입된 유저가 있는지 확인
-    schema.scUser.where('email.body').equals(userEmail.body).exec(function(err, docs){
+    schema.scUser.where('email').equals(userEmail).exec(function(err, docs){
         if(err){
             result = 780;
             data.result = result;
@@ -250,13 +250,10 @@ exports.signUser = function(req, res){
 
                 new schema.scUser({
                     email:userEmail,
-                    password:userPwd,
-                    name:userName,
-                    work:userWork,
-                    birth:userBirth,
-                    sex:userSex,
                     hashPassword:hashPasswd,
-                    salt:salt
+                    salt:salt,
+                    name:userName,
+                    birth:userBirth
                 }).save(function(err, docs){
                         if(err){
                             result = 780;

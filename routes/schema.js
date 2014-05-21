@@ -69,7 +69,7 @@ var userSchema = mongoose.Schema({
   hashPassword: String,
   salt: String,
   name: String,
-  sex: String,
+  birth: Date,
 
   //시스템
   auth_code:{type:String, default:null},

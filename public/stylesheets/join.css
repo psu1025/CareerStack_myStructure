@@ -1,5 +1,5 @@
 body {
-    /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
+    font-family: "Nanum Gothic", sans-serif;
     background-color: #2e2e2e;
     text-align: center;
     align-items: center;
@@ -42,10 +42,7 @@ a {
     width:215px;
     height:15px;
     text-align: right;
-}
-
-#datepicker{
-
+    font-family: "Nanum Gothic", sans-serif;
 }
 
 #btn{

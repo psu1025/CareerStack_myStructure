@@ -6,6 +6,8 @@ html
         meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
         title= title
         link(rel='stylesheet', href='/stylesheets/style.css')
+        script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+
         script(type='text/javascript').
             WebFontConfig = {
             custom: {
@@ -30,19 +32,45 @@ html
                 br
                 br
                 br
-                form(action='/view/login',method='post')
-                    input(type='text', id='input_txt',placeholder='E-Mail', name='user[email]')
+                form#loginForm(action='/api/login',method='post')
+                    input(type='text', id='input_txt',placeholder='E-Mail', name='username')
                     br
-                    input(type='password', id='input_txt',placeholder='Password',name='user[password]')
+                    input(type='password', id='input_txt',placeholder='Password',name='password')
                     #btn
                         a(href='/view/join')
                             img(id='btn_main',src='../resource/images/main/btn_join.png', border='0')
                         input(id='btn_main',type='image',src='../resource/images/main/btn_login.png',border="0",alt="Submit")
-                        a(href='/user/find')
-                            p forgot password?
+                        //a(href='/user/find')
+                        //    p forgot password?
 
             #info.center
                 p(id="infoText").
                     당신의 과거를 정리해서 담아보세요. 다양한 템플릿을 이용해 쉽게 포트폴리오를 작성할 수 있습니다.
                     <br />
                     '포트폴리오 관리 서비스 CareerStack'
+        script(type='text/javascript').
+                $(document).ready(function() {
+                    $("#loginForm").submit(function() { // intercepts the submit event
+                        $.ajax({ // make an AJAX request
+                            type: "POST",
+                            url: "/api/login", // it's the URL of your component B
+                            data: $("#loginForm").serialize(), // serializes the form's elements
+                            success: function(data)
+                            {
+                                if(data.result == 100){
+                                    window.location="/view/mypage";
+                                }
+                                else if(data.result == 101){
+                                    alert('해당 이메일이 존재하지 않습니다');
+                                }
+                                else if(data.result == 102){
+                                    alert('비밀번호가 잘못되었습니다');
+                                }
+                                else {
+                                    alert('알 수 없는 오류. 다시 시도해 주세요');
+                                }
+                            }
+                        });
+                        return false;
+                    });
+                });

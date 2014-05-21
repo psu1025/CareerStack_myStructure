@@ -6,7 +6,8 @@
 // 모듈 요청
 ////////////////////////////////////////////////
 var fs = require('fs'),
-    jade = require('jade');
+    jade = require('jade'),
+    util = require('util');
 
 ////////////////////////////////////////////////
 //전역 상수들
@@ -38,7 +39,12 @@ exports.viewJoin = function(req, res){
 };
 
 exports.viewJoinProcess = function(req, res){
-    res.redirect('/view/main');
+    console.log(util.inspect(req.body.user));
+    //res.redirect('/view/main');
+    //res.json
+    var data = {};
+    data.result = 200;
+    res.json(data)
 };
 
 
@@ -50,6 +56,5 @@ exports.mapTest = function(req, res){
 };
 
 exports.testJade = function(req, res){
-    res.render(JADE_PATH+'index.jade');
+    res.render(JADE_PATH+'test.jade');
 };
-

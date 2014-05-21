@@ -80,6 +80,7 @@ function findById(id, callback){
                     "_id":          id,
                     "email":        docs.email,
                     "name":         docs.name,
+                    "birth":        docs.birth,
                     "authcode":     docs.auth_code,
                     "hashPassword": docs.hashPassword,
                     "salt":         docs.salt
@@ -94,7 +95,7 @@ function findById(id, callback){
 };
 
 function findByEmail(email, callback){
-    schema.scUser.findOne({"email.body":email}).exec(function(err, docs){
+    schema.scUser.findOne({"email":email}).exec(function(err, docs){
         if(err){
             return callback(err);
         }
@@ -104,6 +105,7 @@ function findByEmail(email, callback){
                     "_id":          docs._id,
                     "email":        email,
                     "name":         docs.name,
+                    "birth":        docs.birth,
                     "authcode":     docs.auth_code,
                     "hashPassword": docs.hashPassword,
                     "salt":         docs.salt
@@ -191,10 +193,10 @@ app.use(express.compress());              //리퀘스트 압축
 app.use('/upload', function(req, res, next){
     upload.fileHandler({
         uploadDir: function(){
-            return __dirname + '/public/uploads/' + req.headers.user_id
+            return __dirname + '/public/uploads/'// + req.headers.user_id
         },
         uploadUrl: function(){
-            return '/uploads/' + req.headers.user_id
+            return '/uploads/'// + req.headers.user_id
         }
     })(req, res,  next);
 });
@@ -293,11 +295,11 @@ app.post('/test', routes.test);
 app.get('/', function(req, res){
     res.redirect('/view/main');
 });
+
 app.get('/view/main', view.viewMain);
-app.get('/view/mypage/:user', view.viewMyPage);
+app.get('/view/mypage', view.viewMyPage);
 
 app.get('/view/join', view.viewJoin);
-app.post('/view/joinProcess', view.viewJoinProcess);
 
 app.get('/view/maptest', view.mapTest);
 app.get('/view/testjade', view.testJade);

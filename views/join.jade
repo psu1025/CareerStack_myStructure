@@ -9,6 +9,8 @@ html
         link(rel='stylesheet', href='../stylesheets/pikaday.css')
         script(src='../javascripts/moment.js')
         script(src='../javascripts/pikaday.js')
+        script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+
         script(type='text/javascript').
             WebFontConfig = {
             custom: {
@@ -26,7 +28,6 @@ html
                 s.parentNode.insertBefore(wf, s);
             })();
 
-
     body
         #container.center
             #middle.center
@@ -35,36 +36,37 @@ html
                 br
                 br
                 #input
-                    form(action='/view/joinProcess',method='post')
+                    form#joinForm(action='/api/user',method='post')
                         #essential
                             table
                                 tr
                                     td
                                         span 이메일
                                     td
-                                        input(type='text', id='input_txt',placeholder='email@example.com')
+                                        input(type='text', id='input_txt',placeholder='email@example.com',name='user[email]')
                                 tr
                                     td
                                         span 비밀번호
                                     td
-                                        input(type='password', id='input_txt',placeholder='Password')
+                                        input(type='password', id='input_txt',placeholder='Password',name='user[password]')
                                 tr
                                     td
                                         span 비밀번호 확인
                                     td
-                                        input(type='password', id='input_txt',placeholder='Retype your password')
+                                        input(type='password', id='input_txt',placeholder='Retype your password',name='user[repassword]')
                                 tr
                                     td
                                         span 이름
                                     td
-                                        input(type='text', id='input_txt',placeholder='Your Name')
+                                        input(type='text', id='input_txt',placeholder='Your Name',name='user[name]')
                                 tr
                                     td
                                         span 생년월일
                                     td
-                                        input(type='text', id='datepicker',placeholder='Birth', readonly)
+                                        input(type='text', id='datepicker',placeholder='Birth', readonly,name='user[birth]')
                         #join
                             input(id='btn_submit',type='image',src='../resource/images/join/join_btn.png',border="0",alt="Submit")
+                input#result(type='text')
 
         script(type='text/javascript').
             // You can get and set dates with moment objects
@@ -75,4 +77,29 @@ html
                 minDate: new Date('1960-01-01'),
                 maxDate: new Date('2014-12-31'),
                 yearRange: [1960,2014]
+            });
+
+        script(type='text/javascript').
+            $(document).ready(function() {
+                $("#joinForm").submit(function() { // intercepts the submit event
+                    $.ajax({ // make an AJAX request
+                        type: "POST",
+                        url: "/api/user", // it's the URL of your component B
+                        data: $("#joinForm").serialize(), // serializes the form's elements
+                        success: function(data)
+                        {
+                            if(data.result == 200){
+                                alert('회원가입 성공! 환영합니다!');
+                                window.location="/";
+                            }
+                            else if(data.result == 201){
+                                alert('이미 이 이메일로 가입된 유저가 있습니다');
+                            }
+                            else{
+                                alert('알 수 없는 오류. 다시 시도해 주세요');
+                            }
+                        }
+                    });
+                    return false;
+                });
             });
