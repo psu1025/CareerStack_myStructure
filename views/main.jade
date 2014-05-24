@@ -8,6 +8,10 @@ html
         link(rel='stylesheet', href='/stylesheets/style.css')
         script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
 
+        //script(src='../javascripts/bootstrap.min.js')
+        //link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+        //link(rel='stylesheet', href='/stylesheets/bootstrap-theme.min.css')
+
         script(type='text/javascript').
             WebFontConfig = {
             custom: {
@@ -33,7 +37,7 @@ html
                 br
                 br
                 form#loginForm(action='/api/login',method='post')
-                    input(type='text', id='input_txt',placeholder='E-Mail', name='username')
+                    input(type='email', id='input_txt',placeholder='E-Mail', name='username')
                     br
                     input(type='password', id='input_txt',placeholder='Password',name='password')
                     #btn
