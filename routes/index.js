@@ -185,7 +185,7 @@ exports.logout = function(req, res){
     req.logout();
     res.clearCookie('authcode');
     res.clearCookie('SESSION');
-    res.json({"result":110});
+    res.redirect('/view/main');
 };
 
 
