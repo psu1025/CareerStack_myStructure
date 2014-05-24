@@ -6,6 +6,12 @@ html
         meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
         title= title
         link(rel='stylesheet', href='/stylesheets/mypage.css')
+
+        script(src='../javascripts/bootstrap.min.js')
+        link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+        link(rel='stylesheet', href='/stylesheets/bootstrap-theme.min.css')
+
+        script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
         script(type='text/javascript').
             WebFontConfig = {
             custom: {
@@ -27,13 +33,16 @@ html
             #top_left
                 img(src='/resource/images/mypage/logo_small.png',id='toplogo')
             #top_right
+                span#welcomeText 박상욱님, 환영합니다.
                 img(src='/resource/images/mypage/write_career.png',id='write_career')
                 img(src='/resource/images/mypage/config.png',id='config')
                 img(src='/resource/images/mypage/logout.png',id='logout')
         #introduce
             #introduce_body
-            #introduce_fold
-                img(src='/resource/images/mypage/fold_up.png', id='fold_up')
+                img(src='/resource/images/mypage/introduce_default.jpg')
+            #introduce_fold.text-center
+                img.text-center.fold_img(src='/resource/images/mypage/fold_up.png', id='fold_img')
+                img.text-center.fold_img(src='/resource/images/mypage/fold_down.png', id='fold_img', style='display:none')
             #introduce_bottom
         #main
             #main_left
@@ -41,3 +50,7 @@ html
                 #menu_edit
             #main_right
         #bottom
+    script(type='text/javascript').
+        $('#introduce_fold').click(function(){
+            $('#introduce_body').slideToggle("fast", function(){$('.fold_img').toggle();});
+        });

@@ -164,7 +164,7 @@ passport.use(new LocalStrategy(
 
             var hashPassword = crypto.createHash('sha512').update(user.salt + password).digest('hex');
             if(user.hashPassword != hashPassword){
-                return done(null,  false, {"result":102});
+                return done(null, false, {"result":102});
             }
 
             return done(null, user);
@@ -245,7 +245,8 @@ app.post('/api/login', function(req, res, next){
             return next(err);
         }
         if(!user){
-            return res.json({"result":101});
+            //위에서 정의한 passport.use에서 받은 데이터를 가지고 유저에게 리턴해 줌
+            return res.json(info);
         }
         req.logIn(user, function(err){
             if(err){

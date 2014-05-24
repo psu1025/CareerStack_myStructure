@@ -1,6 +1,5 @@
-
 ////////////////////////////////////////////////
-//Definition
+//Mongoose Definition
 ////////////////////////////////////////////////
 var mongoose = require('mongoose'),
   Schema = mongoose.Schema,
@@ -10,30 +9,23 @@ var mongoose = require('mongoose'),
 
 
 ////////////////////////////////////////////////
-//Mongodb Schema
+//CareerStack Schema
 ////////////////////////////////////////////////
 
 var testSchema = mongoose.Schema({
-  test:{type:MixedType, default:null},
-  test2:{type:MixedType, default:null}
+    test:{type:MixedType, default:null},
+    test2:{type:MixedType, default:null}
 });
 
 var fileSchema = mongoose.Schema({
-  name:String,
-  originalName:String,
-  size:Number,
-  type:String,
-  deleteType:String,
-  url:String,
-  deleteUrl:String,
-  thumbnailUrl:{type:String, default:null}
-});
-
-var peopleSchema = mongoose.Schema({
-  relation:{type:String, default:null},
-  name:{type:String, default:null},
-  job:{type:String, default:null},
-  contact:{type:String, default:null}
+    name:String,
+    originalName:String,
+    size:Number,
+    type:String,
+    deleteType:String,
+    url:String,
+    deleteUrl:String,
+    thumbnailUrl:{type:String, default:null}
 });
 
 var careerSchema = mongoose.Schema({
@@ -44,13 +36,29 @@ var careerSchema = mongoose.Schema({
 
     attribute: MixedType,
 
+    write_time:{type:Date, default:Date.now},
+    edit_time:{type:Date,default:null}
+});
+
+var templateSchema = mongoose.Schema({
+    user_id:ObjectId,
+    name:String,
+    structure:MixedType,
+
     size:{
         height:Number,
         width:Number
     },
 
-    write_time:{type:Date, default:Date.now},
-    edit_time:{type:Date,default:null}
+    exampleUrl:{
+        url:{type:String, default:null},
+        visible:{type:Boolean, default:true}
+    }
+});
+
+var categorySchema = mongoose.Schema({
+    name:String,
+    careerList:[careerSchema]
 });
 
 var userSchema = mongoose.Schema({
@@ -61,7 +69,15 @@ var userSchema = mongoose.Schema({
     name: String,
     birth: Date,
 
-    careerList: {type:[careerSchema], default:[]},
+    //////////////////////////////////////////////
+    //내부 구조
+    //////////////////////////////////////////////
+    //자기소개 Flipboard에 들어간 이미지 URL
+    introduceUrl: {type:String, default: null},
+
+    //유저의 카테고리 리스트
+    categoryList:[categorySchema],
+    //////////////////////////////////////////////
 
     //시스템
     auth_code:{type:String, default:null},
@@ -70,17 +86,17 @@ var userSchema = mongoose.Schema({
     exit_validate:{type:Boolean, default:false}
 });
 
-var templateSchema = mongoose.Schema({
-    user_id:ObjectId,
-    name:String,
-    structure:MixedType,
-    exampleUrl:{
-        url:{type:String, default:null},
-        visible:{type:Boolean, default:true}
-    }
+
+////////////////////////////////////////////////
+//Deprecated Schema
+////////////////////////////////////////////////
+
+var peopleSchema = mongoose.Schema({
+    relation:{type:String, default:null},
+    name:{type:String, default:null},
+    job:{type:String, default:null},
+    contact:{type:String, default:null}
 });
-
-
 
 var eventSchema = mongoose.Schema({
   user_id:ObjectId,
@@ -119,6 +135,13 @@ var resumeSchema = mongoose.Schema({
   submit:{check:{type:Boolean, default:false}, time:{type:Date, default:null}},
   body:[{question:String, answer:String, length:Number}]
 });
+
+
+
+
+////////////////////////////////////////////////
+//Export
+////////////////////////////////////////////////
 
 module.exports.scUser = mongoose.model('User', userSchema);
 module.exports.scActivity = mongoose.model('Activity', activitySchema);
