@@ -53,6 +53,23 @@ var careerSchema = mongoose.Schema({
     edit_time:{type:Date,default:null}
 });
 
+var userSchema = mongoose.Schema({
+    //필수항목
+    email: String,
+    hashPassword: String,
+    salt: String,
+    name: String,
+    birth: Date,
+
+    careerList: {type:[careerSchema], default:[]},
+
+    //시스템
+    auth_code:{type:String, default:null},
+    join_date:{type:Date,  default: Date.now},
+    exit_date:{type:Date,  default: null},
+    exit_validate:{type:Boolean, default:false}
+});
+
 var templateSchema = mongoose.Schema({
     user_id:ObjectId,
     name:String,
@@ -63,20 +80,7 @@ var templateSchema = mongoose.Schema({
     }
 });
 
-var userSchema = mongoose.Schema({
-  //필수항목
-  email: String,
-  hashPassword: String,
-  salt: String,
-  name: String,
-  birth: Date,
 
-  //시스템
-  auth_code:{type:String, default:null},
-  join_date:{type:Date,  default: Date.now},
-  exit_date:{type:Date,  default: null},
-  exit_validate:{type:Boolean, default:false}
-});
 
 var eventSchema = mongoose.Schema({
   user_id:ObjectId,
