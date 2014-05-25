@@ -55,6 +55,7 @@ var careerSchema = mongoose.Schema({
 
 var categorySchema = mongoose.Schema({
     name:String,
+    description:String,
     careerList:[careerSchema]
 });
 
@@ -70,7 +71,7 @@ var userSchema = mongoose.Schema({
     //내부 구조
     //////////////////////////////////////////////
     //자기소개 Flipboard에 들어간 이미지 URL
-    introduceUrl: {type:String, default: null},
+    introduceUrl: {type:String, default: "/resource/images/mypage/introduce_default.png"},
 
     //유저의 카테고리 리스트
     categoryList:[categorySchema],
@@ -139,13 +140,13 @@ var resumeSchema = mongoose.Schema({
 ////////////////////////////////////////////////
 //Export
 ////////////////////////////////////////////////
-
-module.exports.scUser = mongoose.model('User', userSchema);
 module.exports.scActivity = mongoose.model('Activity', activitySchema);
 module.exports.scActivityTemplete = mongoose.model('ActivityTempletes', activityTempleteSchema);
 module.exports.scResume = mongoose.model('Resume', resumeSchema);
 module.exports.scEvent = mongoose.model('Event', eventSchema);
 module.exports.testSc = mongoose.model('test', testSchema);
 
+module.exports.scUser = mongoose.model('User', userSchema);
 module.exports.scCareer = mongoose.model('Career', careerSchema);
 module.exports.scTemplete = mongoose.model('Templetes', templateSchema);
+module.exports.scCategory = mongoose.model('Category', categorySchema);

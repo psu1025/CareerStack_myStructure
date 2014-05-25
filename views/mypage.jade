@@ -9,6 +9,7 @@ html
 
         script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
         script(src='../javascripts/bootstrap.min.js')
+        script(src='../javascripts/jquery-ui-1.10.4.custom.min.js')
         link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
         link(rel='stylesheet', href='/stylesheets/bootstrap-theme.min.css')
 
@@ -32,9 +33,10 @@ html
         #wholeDiv
             #top
                 #top_left
-                    img(src='/resource/images/mypage/logo_small.png',id='toplogo')
+                    a(href='/view/mypage')
+                        img(src='/resource/images/mypage/logo_small.png',id='toplogo')
                 #top_right
-                    span#welcomeText 박상욱님, 환영합니다.
+                    span#welcomeText #{name}님, 환영합니다.
                     img(src='/resource/images/mypage/write_career.png',id='write_career')
                     img(src='/resource/images/mypage/config.png',id='config')
                     a(href='/api/logout')
@@ -49,15 +51,28 @@ html
             #main
                 #main_left
                     #menu_body
-                        img(src='/resource/images/mypage/logout.png',id='logout')
-                        br
-                        img(src='/resource/images/mypage/logout.png',id='logout')
-                        br
-                        img(src='/resource/images/mypage/logout.png',id='logout')
+                        - if(categoryItems.length)
+                            each item in categoryItems
+                                #categoryItem.categoryUnselected.text-left
+                                    span #{item.name}
                     #menu_edit
                 #main_right
+                    - if(categoryItems.length)
+                        each item, index in categoryItems
+                            if index%3 === 0
+                                #test1
+                                    p this is % result 1
+                            else
+                                #test2
+                                    p this is another
+
+                    //#categoryUnfold
+                    //    span #{item.name}
+                    //    br
+                    //    span #{item.description}
             #bottom
+                span.text-center 개발자 - 박상욱, 디자이너 - 김광훈
     script(type='text/javascript').
         $('#introduce_fold').click(function(){
-            $('#introduce_body').slideToggle("fast", function(){$('.fold_img').toggle();});
+            $('#introduce_body').slideToggle("slow", "easeOutQuint", function(){$('.fold_img').toggle();});
         });

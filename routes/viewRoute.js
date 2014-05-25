@@ -9,6 +9,8 @@ var fs = require('fs'),
     jade = require('jade'),
     util = require('util');
 
+var schema = require('./schema.js');
+
 ////////////////////////////////////////////////
 //전역 상수들
 ////////////////////////////////////////////////
@@ -31,7 +33,38 @@ exports.viewMain = function(req, res){
 };
 
 exports.viewMyPage = function(req, res){
-    res.render(JADE_PATH+'mypage.jade');
+    var user = req.user;
+    schema.scUser.findOne({_id:user._id}).select('categoryList')
+        .exec(
+            function(err, doc){
+                if(err){
+                    //에러가 난 경우 메인으로
+                    result = 780;
+                    req.logout();
+                    res.redirect('/view/main');
+                    return;
+                }
+                else{
+                    if(doc){
+                        //categoryList를 가지고 render
+                        console.log(util.inspect(doc));
+                        res.render(JADE_PATH+'mypage.jade', {
+                            name:req.user.name,
+                            categoryItems:doc.categoryList
+                        });
+                    }
+                    else{
+                        //아예 카테고리가 없다 -> 메인으로
+                        result = 780;
+                        req.logout();
+                        res.redirect('/view/main');
+                        return;
+                    }
+                }
+            }
+        );
+
+
 };
 
 exports.viewJoin = function(req, res){
@@ -39,12 +72,9 @@ exports.viewJoin = function(req, res){
 };
 
 exports.viewJoinProcess = function(req, res){
-    console.log(util.inspect(req.body.user));
-    //res.redirect('/view/main');
-    //res.json
-    var data = {};
-    data.result = 200;
-    res.json(data)
+//    var data = {};
+//    data.result = 200;
+    res.json({"result":"200"});
 };
 
 

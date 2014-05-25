@@ -125,12 +125,30 @@ function ensureAuthenticatedBan(req, res, next){
     console.log(req.isAuthenticated());
     if(req.cookies.authcode && req.user &&
         (req.cookies.authcode === req.user.authcode) && req.isAuthenticated()){
+        //인증이 되어있으면 통과
         req.ensureAuth = true;
         return next();
     }
     else{
+        //안 되어있으면 메인 페이지로 리다이렉션
         req.logout();
-        res.json({"result":"666"});
+        res.redirect('/view/main');
+        return;
+    }
+};
+
+function ensureAuthenticatedRedirectionToMypage(req, res, next){
+    if(req.cookies.authcode && req.user &&
+        (req.cookies.authcode === req.user.authcode) && req.isAuthenticated()){
+        //인증이 되어 있으면 마이페이지로 리다이렉션
+        req.ensureAuth = true;
+        res.redirect('/view/mypage');
+        return;
+    }
+    else{
+        //안 되어 있으면 그대로
+        req.ensureAuth = false;
+        return next();
     }
 };
 
@@ -145,6 +163,7 @@ function ensureAuthenticatedBranch(req, res, next){
         return next();
     }
 };
+
 
 passport.serializeUser(function(user, done){
     done(null, user._id);
@@ -297,10 +316,10 @@ app.get('/', function(req, res){
     res.redirect('/view/main');
 });
 
-app.get('/view/main', view.viewMain);
-app.get('/view/mypage', view.viewMyPage);
+app.get('/view/main', ensureAuthenticatedRedirectionToMypage, view.viewMain);
+app.get('/view/mypage', ensureAuthenticatedBan, view.viewMyPage);
 
-app.get('/view/join', view.viewJoin);
+app.get('/view/join', ensureAuthenticatedRedirectionToMypage, view.viewJoin);
 
 app.get('/view/maptest', view.mapTest);
 app.get('/view/testjade', view.testJade);

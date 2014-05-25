@@ -172,7 +172,32 @@ Date.prototype.getKoreaeDatetime = function() {
 ////////////////////////////////////////////////
 //API 공용 함수들
 ////////////////////////////////////////////////
-
+var defaultCategoryList = [
+    new schema.scCategory({
+        name:"Plan",
+        description:"기획에 관한 포트폴리오를 추가하세요"
+    }),
+    new schema.scCategory({
+        name:"Design",
+        description:"디자인에 관한 포트폴리오를 추가하세요"
+    }),
+    new schema.scCategory({
+        name:"Development",
+        description:"개발에 관한 포트폴리오를 추가하세요"
+    }),
+    new schema.scCategory({
+        name:"Project",
+        description:"프로젝트에 관한 포트폴리오를 추가하세요"
+    }),
+    new schema.scCategory({
+        name:"Besides",
+        description:"기타 포트폴리오를 추가하세요"
+    }),
+    new schema.scCategory({
+        name:"Photo",
+        description:"사진에 관한 포트폴리오를 추가하세요"
+    })
+];
 
 ////////////////////////////////////////////////
 //API 목록
@@ -253,7 +278,9 @@ exports.signUser = function(req, res){
                     hashPassword:hashPasswd,
                     salt:salt,
                     name:userName,
-                    birth:userBirth
+                    birth:userBirth,
+                    categoryList:defaultCategoryList
+
                 }).save(function(err, docs){
                         if(err){
                             result = 780;
@@ -285,7 +312,7 @@ exports.editUserInfo = function(req, res){
 
     //수정 시 모든 데이터가 올라오므로 필수 데이터가 없으면 튕겨낸다
     var bodyData = req.body;
-    if(areEmpty([bodyData.name, bodyData.birth, bodyData.sex, bodyData.email]))
+    if(areEmpty([bodyData.name, bodyData.birth, bodyData.email]))
     {
         data.result = 888;
         res.json(data);
