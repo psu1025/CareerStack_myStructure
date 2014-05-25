@@ -29,28 +29,34 @@ html
                 s.parentNode.insertBefore(wf, s);
             })();
     body
-        #top
-            #top_left
-                img(src='/resource/images/mypage/logo_small.png',id='toplogo')
-            #top_right
-                span#welcomeText 박상욱님, 환영합니다.
-                img(src='/resource/images/mypage/write_career.png',id='write_career')
-                img(src='/resource/images/mypage/config.png',id='config')
-                a(href='/api/logout')
-                    img(src='/resource/images/mypage/logout.png',id='logout')
-        #introduce
-            #introduce_body
-                img(src='/resource/images/mypage/introduce_default.png')
-            #introduce_fold.text-center
-                img.text-center.fold_img(src='/resource/images/mypage/fold_up.png', id='fold_img')
-                img.text-center.fold_img(src='/resource/images/mypage/fold_down.png', id='fold_img', style='display:none')
-            #introduce_bottom
-        #main
-            #main_left
-                #menu_body
-                #menu_edit
-            #main_right
-        #bottom
+        #wholeDiv
+            #top
+                #top_left
+                    img(src='/resource/images/mypage/logo_small.png',id='toplogo')
+                #top_right
+                    span#welcomeText 박상욱님, 환영합니다.
+                    img(src='/resource/images/mypage/write_career.png',id='write_career')
+                    img(src='/resource/images/mypage/config.png',id='config')
+                    a(href='/api/logout')
+                        img(src='/resource/images/mypage/logout.png',id='logout')
+            #introduce
+                #introduce_body
+                    img(src='/resource/images/mypage/introduce_default.png')
+                #introduce_fold.text-center
+                    img.text-center.fold_img(src='/resource/images/mypage/fold_up.png', id='fold_img')
+                    img.text-center.fold_img(src='/resource/images/mypage/fold_down.png', id='fold_img', style='display:none')
+                #introduce_bottom
+            #main
+                #main_left
+                    #menu_body
+                        img(src='/resource/images/mypage/logout.png',id='logout')
+                        br
+                        img(src='/resource/images/mypage/logout.png',id='logout')
+                        br
+                        img(src='/resource/images/mypage/logout.png',id='logout')
+                    #menu_edit
+                #main_right
+            #bottom
     script(type='text/javascript').
         $('#introduce_fold').click(function(){
             $('#introduce_body').slideToggle("fast", function(){$('.fold_img').toggle();});
