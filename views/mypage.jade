@@ -7,11 +7,11 @@ html
         title= title
         link(rel='stylesheet', href='/stylesheets/mypage.css')
 
+        script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
         script(src='../javascripts/bootstrap.min.js')
         link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
         link(rel='stylesheet', href='/stylesheets/bootstrap-theme.min.css')
 
-        script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
         script(type='text/javascript').
             WebFontConfig = {
             custom: {
@@ -40,7 +40,7 @@ html
                     img(src='/resource/images/mypage/logout.png',id='logout')
         #introduce
             #introduce_body
-                img(src='/resource/images/mypage/introduce_default.jpg')
+                img(src='/resource/images/mypage/introduce_default.png')
             #introduce_fold.text-center
                 img.text-center.fold_img(src='/resource/images/mypage/fold_up.png', id='fold_img')
                 img.text-center.fold_img(src='/resource/images/mypage/fold_down.png', id='fold_img', style='display:none')

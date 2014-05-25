@@ -28,6 +28,17 @@ var fileSchema = mongoose.Schema({
     thumbnailUrl:{type:String, default:null}
 });
 
+var templateSchema = mongoose.Schema({
+    order:Number,
+    name:String,
+    structure:MixedType,
+
+    size:{
+        height:Number,
+        width:Number
+    }
+});
+
 var careerSchema = mongoose.Schema({
     user_id:ObjectId,
     name: String,
@@ -36,24 +47,10 @@ var careerSchema = mongoose.Schema({
 
     attribute: MixedType,
 
+    templateList: [templateSchema],
+
     write_time:{type:Date, default:Date.now},
     edit_time:{type:Date,default:null}
-});
-
-var templateSchema = mongoose.Schema({
-    user_id:ObjectId,
-    name:String,
-    structure:MixedType,
-
-    size:{
-        height:Number,
-        width:Number
-    },
-
-    exampleUrl:{
-        url:{type:String, default:null},
-        visible:{type:Boolean, default:true}
-    }
 });
 
 var categorySchema = mongoose.Schema({
