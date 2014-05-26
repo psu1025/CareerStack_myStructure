@@ -18,7 +18,7 @@ a {
 #wholeDiv{
     width:1200px;
     margin: 0 auto;
-    position:relative;
+    /*position:relative;*/
 }
 
 .center{
@@ -40,7 +40,7 @@ a {
     padding-left: 65px;
     width:auto;
     float: left;
-    display: table-cell;
+    /*display: table-cell;*/
     vertical-align: middle;
 }
 
@@ -50,7 +50,7 @@ a {
     padding-right:28px;
     float: right;
     height:100%;
-    display: table-cell;
+    /*display: table-cell;*/
     vertical-align: middle;
 }
 
@@ -83,8 +83,8 @@ a {
 
 #main{
     width:100%;
-    height:900px;
-    overflow: auto;
+    height:850px;
+    /*overflow: auto;*/
 }
 
 #main_left{
@@ -99,7 +99,7 @@ a {
     height:100%;
     background-color: #f2f2f2;
     padding-top: 60px;
-    padding-left: 20px;
+    padding-left: 30px;
 }
 
 #categoryItem{
@@ -129,4 +129,56 @@ a {
     font-family: "Nanum Gothic", sans-serif;
     font-weight: bold;
     font-size: 16px;
+}
+#rowDiv{
+    width:990px;
+    height:285px;
+    padding-bottom: 35px;
+}
+
+#colDiv{
+    width: 300px;
+    height: 250px;
+    margin-right:20px;
+    padding: 0 0 0 0px;
+}
+
+#menuItem{
+    width:290px;
+}
+
+#menuItemTop{
+    height:40px;
+    line-height:40px;
+    padding-left: 60px;
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color:#e6e6e6;
+    background-image:url("../resource/images/mypage/list_fold.png");
+    background-repeat: no-repeat;
+}
+
+#menuItemMiddle{
+    height:60px;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-family: "Nanum Gothic", sans-serif;
+    border-bottom: 1px solid #2e2e2e;
+}
+
+#menuItemBody{
+    height: 150px;
+}
+
+#menuItemList{
+    font-family: "Nanum Gothic", sans-serif;
+    height:30px;
+    line-height:30px;
+    font-size: 15px;
+    margin: 0 0 0 0px;
+    padding: 0 0 0 15px;
 }
