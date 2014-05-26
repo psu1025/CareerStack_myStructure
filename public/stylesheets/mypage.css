@@ -2,12 +2,8 @@ body, html{
     height:100%;
 }
 body {
-    /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
-    /*background-color: #2e2e2e;*/
-    text-align: center;
     padding: 0 0 0 0px;
     margin: 0 0 0 0px;
-    height:100%
 }
 
 a {
@@ -17,7 +13,6 @@ a {
 #wholeDiv{
     width:1200px;
     margin: 0 auto;
-    /*position:relative;*/
 }
 
 .center{
@@ -39,7 +34,6 @@ a {
     padding-left: 65px;
     width:auto;
     float: left;
-    /*display: table-cell;*/
     vertical-align: middle;
 }
 
@@ -49,7 +43,6 @@ a {
     padding-right:28px;
     float: right;
     height:100%;
-    /*display: table-cell;*/
     vertical-align: middle;
 }
 
