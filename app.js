@@ -320,6 +320,15 @@ app.get('/view/main', ensureAuthenticatedRedirectionToMypage, view.viewMain);
 app.get('/view/mypage', ensureAuthenticatedBan, view.viewMyPage);
 
 app.get('/view/join', ensureAuthenticatedRedirectionToMypage, view.viewJoin);
+app.get('/view/careerList/:category', ensureAuthenticatedBan, view.viewCareerList);
+
+app.get('/view/career/:career');
+app.post('/view/career/:career');
+app.del('/view/career/:career');
+
+
+app.get('/view/career/edit/:career');
+app.post('/view/career/edit/:career');
 
 app.get('/view/maptest', view.mapTest);
 app.get('/view/testjade', view.testJade);

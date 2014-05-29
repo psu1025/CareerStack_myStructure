@@ -63,8 +63,6 @@ exports.viewMyPage = function(req, res){
                 }
             }
         );
-
-
 };
 
 exports.viewJoin = function(req, res){
@@ -77,6 +75,39 @@ exports.viewJoinProcess = function(req, res){
     res.json({"result":"200"});
 };
 
+exports.viewCareerList = function(req, res){
+    var user = req.user;
+    schema.scUser.findOne({_id:user._id}).select('categoryList')
+        .exec(
+        function(err, doc){
+            if(err){
+                //에러가 난 경우 메인으로
+                result = 780;
+                req.logout();
+                res.redirect('/view/main');
+                return;
+            }
+            else{
+                if(doc){
+                    //categoryList를 가지고 render
+                    console.log(util.inspect(req.params.category));
+                    res.render(JADE_PATH+'careerList.jade', {
+                        name:req.user.name,
+                        categoryItems:doc.categoryList,
+                        selectCategory:req.params.category
+                    });
+                }
+                else{
+                    //아예 카테고리가 없다 -> 메인으로
+                    result = 780;
+                    req.logout();
+                    res.redirect('/view/main');
+                    return;
+                }
+            }
+        }
+    );
+};
 
 exports.mapTest = function(req, res){
     fs.readFile(JADE_PATH+'maptest.html', 'utf8', function(error, data){
