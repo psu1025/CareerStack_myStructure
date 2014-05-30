@@ -94,7 +94,8 @@ exports.viewCareerList = function(req, res){
                     res.render(JADE_PATH+'careerList.jade', {
                         name:req.user.name,
                         categoryItems:doc.categoryList,
-                        selectCategory:req.params.category
+                        selectCategory:req.params.category,
+                        careerItems:{"length":0}
                     });
                 }
                 else{
