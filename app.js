@@ -233,13 +233,15 @@ app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
 //잘못 된 경로로 들어왔을 때. 하단에 '*' 처리 한 부분이 동일 결과임.
+var JADE_PATH = __dirname + '/views/';
 app.use(function(req, res, next){
     var data = {};
 
     //res.status(404).json(data);
     if(res.status(404)){
-        data.result = 777;
-        res.json(data);
+//        data.result = 777;
+//        res.json(data);
+        res.render(JADE_PATH+'error.jade');
     }
     else{
         next();
@@ -301,10 +303,12 @@ app.get('/api/career/:career')
 app.get('/api/list/career/:user');
 
 //Template API
+app.get('/api/template/:template');     //정해진 Template 양식 받기
+
 app.post('/api/template');
 app.delete('/api/template/:template');
 app.put('/api/template/:template');
-app.get('/api/template/:template');
+
 
 //Test API
 app.post('/test', routes.test);
@@ -322,10 +326,10 @@ app.get('/view/mypage', ensureAuthenticatedBan, view.viewMyPage);
 app.get('/view/join', ensureAuthenticatedRedirectionToMypage, view.viewJoin);
 app.get('/view/careerList/:category', ensureAuthenticatedBan, view.viewCareerList);
 
-app.get('/view/career/:career');
-app.post('/view/career/:career');
-app.del('/view/career/:career');
+app.get('/view/career/selectTemplate', ensureAuthenticatedBan, view.selectTemplate);
+app.get('/view/career/write/:template', ensureAuthenticatedBan, view.writeCareer);
 
+app.get('/view/setting', ensureAuthenticatedBan, view.setting);
 
 app.get('/view/career/edit/:career');
 app.post('/view/career/edit/:career');

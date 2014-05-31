@@ -180,10 +180,6 @@ a {
     padding: 0 0 0 15px;
 }
 
-#careerItems{
-    font-family: "Nanum Gothic", sans-serif;
-    font-size:20px;
-}
 #careerItem{
     width: 885px;
     height:120px;
@@ -209,4 +205,39 @@ a {
     color:#e6e6e6;
     background-image:url("../resource/images/careerList/list_unfold.png");
     background-repeat: no-repeat;
+}
+
+#templateItem{
+    width: 885px;
+    height:120px;
+    margin-top: 20px;
+    border: 1px dotted #2e2e2e;
+    padding: 0 0 0 0px;
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+#templateItemLeft{
+    height: inherit;
+    display: inline-table;
+    float:left;
+}
+
+#templateItemMiddle{
+    height: inherit;
+    display: inline-table;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+#templateTitle{
+    font-weight: bold;
+    font-size:18px;
+}
+
+#templateItemRight{
+    height: inherit;
+    width:100px;
+    display: inline-table;
+    float:right;
+    line-height:120px;
 }
