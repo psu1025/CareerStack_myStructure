@@ -198,21 +198,23 @@ a {
 #categoryTitle{
     height:40px;
     line-height:40px;
-    padding-left: 60px;
+    padding-left: 40px;
     font-family: "Nanum Gothic", sans-serif;
     font-weight: bold;
     font-size: 20px;
-    color:#e6e6e6;
-    background-image:url("../resource/images/careerList/list_unfold.png");
+    color:#25AD5F;
+    /*background-image:url("../resource/images/careerList/list_unfold.png");*/
+    background-image:url("../resource/images/template/icon.png");
     background-repeat: no-repeat;
+    background-position: left center;
 }
 
 #templateItem{
     width: 885px;
     height:120px;
-    margin-top: 20px;
-    border: 1px dotted #2e2e2e;
+    margin-top: 30px;
     padding: 0 0 0 0px;
+    margin-left: 40px;
     font-family: "Nanum Gothic", sans-serif;
 }
 
@@ -236,7 +238,7 @@ a {
 
 #templateItemRight{
     height: inherit;
-    width:100px;
+    padding-right: 80px;
     display: inline-table;
     float:right;
     line-height:120px;
