@@ -155,7 +155,7 @@ exports.writeCareer = function(req, res){
                 if(doc){
                     //categoryList를 가지고 render
                     console.log(util.inspect(req.params.category));
-                    res.render(JADE_PATH+'careerList.jade', {
+                    res.render(JADE_PATH+'writeCareer.jade', {
                         name:req.user.name,
                         categoryItems:doc.categoryList,
                         selectCategory:req.params.category,

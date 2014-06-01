@@ -5,12 +5,13 @@ html
     head
         meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
         title= title
-        link(rel='stylesheet', href='/stylesheets/style.css')
+
         script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
 
-        //script(src='../javascripts/bootstrap.min.js')
-        //link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
-        //link(rel='stylesheet', href='/stylesheets/bootstrap-theme.min.css')
+        script(src='/javascripts/bootstrap.min.js')
+        link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+        link(rel='stylesheet', href='/stylesheets/bootstrap-theme.min.css')
+        link(rel='stylesheet', href='/stylesheets/style.css')
 
         script(type='text/javascript').
             WebFontConfig = {
@@ -32,18 +33,19 @@ html
         #container.center
 
             #middle.center
-                img(src='../resource/images/main/logo.png')
+                img(src='/resource/images/main/logo.png')
                 br
                 br
                 br
-                form#loginForm(action='/api/login',method='post')
-                    input(type='email', id='input_txt',placeholder='E-Mail', name='username')
-                    br
-                    input(type='password', id='input_txt',placeholder='Password',name='password')
+                form#loginForm.form-group(action='/api/login',method='post')
+                    label.sr-only(for="input_email") Email address
+                    input.form-control(type='email', id='input_email',placeholder='E-Mail', name='username')
+                    label.sr-only(for="input_password") Email address
+                    input.form-control(type='password', id='input_password',placeholder='Password',name='password')
                     #btn
                         a(href='/view/join')
-                            img(id='btn_main',src='../resource/images/main/btn_join.png', border='0')
-                        input(id='btn_main',type='image',src='../resource/images/main/btn_login.png',border="0",alt="Submit")
+                            img#btn_main(src='/resource/images/main/btn_join.png', border='0')
+                        input#btn_main(type='image',src='/resource/images/main/btn_login.png',border="0",alt="Submit")
                         //a(href='/user/find')
                         //    p forgot password?
 
