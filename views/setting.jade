@@ -64,7 +64,7 @@ html
                     mixin configCategory(name)
                         #configCategoryItem
                             #textBody
-                                span #{name}
+                                input.form-control(type='text', value='#{name}')
                             img(src='/resource/images/config/edit.png')
                             img(src='/resource/images/config/delete.png')
 
@@ -85,12 +85,11 @@ html
                     #configCategory
                         #categoryTitle.text-left
                             span 카테고리 수정하기
-                        #templates.fontChange
-                            mixin configCategory("test")
-                            mixin configCategory("test")
-                            mixin configCategory("test")
-                            mixin configCategory("test")
-                        #submit.text-right
+                        #categories.fontChange
+                            each item in categoryItems
+                                mixin configCategory(item.name)
+
+                        #addCategory.text-right
                             img(src='/resource/images/config/edit.png')
 
                     #submit.text-center
@@ -101,4 +100,11 @@ html
     script(type='text/javascript').
         $('#introduce_fold').click(function(){
             $('#introduce_body').slideToggle("slow", "easeOutQuint", function(){$('.fold_img').toggle();});
+        });
+    script(type='text/javascript').
+        //$("#addCategory").live("click", function() {
+        //    $("#categories").append(</br>);
+        //});
+        $( document ).on( "click", "#addCategory", function() {
+            $("#categories").append('<input class="form-control" type="text" value="Test"></input>');
         });
