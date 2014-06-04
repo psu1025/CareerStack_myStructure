@@ -64,9 +64,11 @@ html
                     mixin configCategory(name)
                         #configCategoryItem
                             #textBody
-                                input.form-control(type='text', value='#{name}')
-                            img(src='/resource/images/config/edit.png')
-                            img(src='/resource/images/config/delete.png')
+                                .col-lg-6
+                                    input.form-control(type='text', value='#{name}' disabled)
+                                .col-lg-6
+                                    input.form-control(type='text', value="")
+                            button(type="button" class="btn btn-default") 삭제하기
 
 
                     //-Mixin Declation End
@@ -85,15 +87,22 @@ html
                     #configCategory
                         #categoryTitle.text-left
                             span 카테고리 수정하기
+                        br
+                        #textBody.fontChange
+                            .col-lg-6
+                                span.text-left 현재 카테고리 이름
+                            .col-lg-6
+                                span.text-left 변경할 카테고리 이름
                         #categories.fontChange
-                            each item in categoryItems
-                                mixin configCategory(item.name)
+                            #categoryItems
+                                each item in categoryItems
+                                    mixin configCategory(item.name)
+                        br
+                        #addCategory.text-right.fontChange
+                            button(type="button" class="btn btn-default") 추가하기
 
-                        #addCategory.text-right
-                            img(src='/resource/images/config/edit.png')
-
-                    #submit.text-center
-                        input(type='image')
+                    #submit.text-center.fontChange
+                        button(type="button" class="btn btn-primary btn-lg") 적용하기
 
             #bottom.text-center
                 span 개발자 - 박상욱, 디자이너 - 김광훈

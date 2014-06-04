@@ -196,14 +196,13 @@ a {
 }
 
 #categoryTitle{
-    height:40px;
-    line-height:40px;
+    height: 40px;
+    line-height: 40px;
     padding-left: 40px;
     font-family: "Nanum Gothic", sans-serif;
     font-weight: bold;
     font-size: 20px;
     color:#25AD5F;
-    /*background-image:url("../resource/images/careerList/list_unfold.png");*/
     background-image:url("../resource/images/template/icon.png");
     background-repeat: no-repeat;
     background-position: left center;
@@ -261,7 +260,7 @@ a {
 }
 
 #textBody{
-    width: 700px;
+    width: 800px;
     float: left;
     margin-right: 20px;
 }
@@ -276,4 +275,8 @@ a {
 
 .fontChange{
     font-family: "Nanum Gothic", sans-serif;
+}
+
+#addCategory{
+    width: 900px;
 }
