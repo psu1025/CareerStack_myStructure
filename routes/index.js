@@ -218,7 +218,6 @@ exports.postCareer = function(req, res){
     var result = 999;
     var data = {};
 
-
 }
 
 exports.test = function(req, res){
@@ -460,6 +459,88 @@ exports.getUserInfo = function(req, res){
                 return;
             }
         });
+};
+
+exports.changeUserConfig = function(req, res){
+    var result = 999;
+    var data = {};
+
+    console.log(util.inspect(req.body));
+
+    var user = req.user;
+    var category = req.body.category;
+    var addCategory = req.body.addCategory
+    var filePath = '/uploads/' + user._id + '/' + req.body.filePath;
+
+    //
+    if((category.length + addCategory.length) > 9){
+        result = 501;
+        data.result = result;
+        res.json(data);
+        return;
+    }
+
+    schema.scUser.findOne({_id:user._id})
+    .exec(
+        function(err, doc){
+            if(err){
+                result = 780;
+                data.result = result;
+                res.json(data);
+                return;
+            }
+            else{
+
+            }
+        }
+    );
+
+//    async.waterfall([
+//        //filePath update
+//        function(callback){
+//            schema.scUser.update(
+//                {_id:user._id},
+//                {introduceUrl:filePath},
+//                function(err){
+//                    if(err){
+//                        result = 780;
+//                        callback(err);
+//                        return;
+//                    }
+//                    else{
+//                        //수정 성공
+//                        callback(null);
+//                        return;
+//                    }
+//                }
+//            );
+//        },
+//
+//        //delete Category
+//        function(callback){
+//            schema.scUser.remove(
+//                {_id:user._id},
+//            );
+//        },
+//
+//        //update Category
+//        function(callback){
+//
+//        },
+//
+//        //add Category
+//        function(callback){
+//
+//        }
+//    ],
+//        function(err){
+//            data.result = result;
+//            res.json(data);
+//            return;
+//        }
+//    );
+
+    res.json(data);
 };
 
 //Activity Api Implement

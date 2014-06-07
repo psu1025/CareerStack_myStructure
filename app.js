@@ -208,27 +208,32 @@ app.use(express.logger({
 //압축
 app.use(express.compress());              //리퀘스트 압축
 
-//upload 체크
-app.use('/upload', function(req, res, next){
-    upload.fileHandler({
-        uploadDir: function(){
-            return __dirname + '/public/uploads/'// + req.headers.user_id
-        },
-        uploadUrl: function(){
-            return '/uploads/'// + req.headers.user_id
-        }
-    })(req, res,  next);
-});
 
 
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.cookieParser());
-app.use(express.bodyParser());
-app.use(express.methodOverride());
+
 app.use(express.session({secret:'dlrjsqlalfqjsgh'}));
 app.use(passport.initialize());
 app.use(passport.session());
+
+//upload 체크
+app.use('/upload', function(req, res, next){
+    console.log(util.inspect(req.user));
+    upload.fileHandler({
+        uploadDir: function(){
+            return __dirname + '/public/uploads/' + req.user._id;
+        },
+        uploadUrl: function(){
+            return '/uploads/' + req.user._id;
+        }
+    })(req, res, next);
+});
+
+app.use(express.bodyParser());
+app.use(express.methodOverride());
+
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -309,6 +314,10 @@ app.post('/api/template');
 app.delete('/api/template/:template');
 app.put('/api/template/:template');
 
+//Config API
+app.post('/api/config/submit', ensureAuthenticatedBan, routes.changeUserConfig);
+
+//Upload API
 
 //Test API
 app.post('/test', routes.test);

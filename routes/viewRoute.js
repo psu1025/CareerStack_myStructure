@@ -176,7 +176,7 @@ exports.writeCareer = function(req, res){
 
 exports.setting = function(req, res){
     var user = req.user;
-    schema.scUser.findOne({_id:user._id}).select('categoryList')
+    schema.scUser.findOne({_id:user._id})
         .exec(
         function(err, doc){
             if(err){
@@ -189,12 +189,12 @@ exports.setting = function(req, res){
             else{
                 if(doc){
                     //categoryList를 가지고 render
-                    console.log(util.inspect(req.params.category));
+                    console.log(util.inspect(doc));
                     res.render(JADE_PATH+'setting.jade', {
                         name:req.user.name,
                         categoryItems:doc.categoryList,
                         selectCategory:req.params.category,
-                        careerItems:{"length":0}
+                        introduceUrl:doc.introduceUrl
                     });
                 }
                 else{

@@ -8,8 +8,12 @@ html
         link(rel='stylesheet', href='/stylesheets/setting.css')
 
         script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+        script(src='/javascripts/jquery.serialize-object.min.js')
         script(src='/javascripts/bootstrap.min.js')
         script(src='/javascripts/jquery-ui-1.10.4.custom.min.js')
+        script(src="/javascripts/jquery.ui.widget.js")
+        script(src="/javascripts/jquery.fileupload.js")
+
         link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
         link(rel='stylesheet', href='/stylesheets/bootstrap-theme.min.css')
 
@@ -29,6 +33,13 @@ html
                 var s = document.getElementsByTagName('script')[0];
                 s.parentNode.insertBefore(wf, s);
             })();
+        script(type='text/javascript').
+            function delCategory(btnObject){
+                var value = $(btnObject).siblings('#textBody').find('#beforeCategory').val();
+                var input = $("<input />").attr("type", "hidden").attr("name", "delCategory[]").val(value);
+                $('#delCategoryHidden').append($(input));
+                $(btnObject).parents('#configCategoryItem').remove();
+            }
     body
         #wholeDiv
             #top
@@ -61,48 +72,87 @@ html
                     #menu_edit
                 #main_right
                     //-Mixin Declation
-                    mixin configCategory(name)
+                    mixin configCategory(name, index)
                         #configCategoryItem
                             #textBody
                                 .col-lg-6
-                                    input.form-control(type='text', value='#{name}' disabled)
+                                    input#beforeCategory.form-control(type='text', value='#{name}' name="category[#{index}][before]" readonly="readonly")
                                 .col-lg-6
-                                    input.form-control(type='text', value="")
-                            button(type="button" class="btn btn-default") 삭제하기
+                                    input#afterCategory.form-control(type='text', value="" name="category[#{index}][after]")
+                            button#categoryDeleteBtn(type="button" class="btn btn-default" onclick="delCategory(this);return false;") 삭제하기
 
 
                     //-Mixin Declation End
+                    form#configForm(role="form")
+                        #introduceImage
+                            #categoryTitle.text-left
+                                span.fontChange 자기소개 이미지 수정하기
+                            #editCategory
+                                strong.fontChange.text-info 자기소개 이미지는 가로 1200px, 세로 300px이 최대입니다.
+                                #imagePreview.text-center
+                                    img(src='#{introduceUrl}')
+                            #uploadFile.form-group
+                                label.fontChange(for="uploadIntroduce") 이미지 파일을 업로드 해 주세요
+                                input#filePath.hiddenObject(type='text', name="filePath")
+                                input#uploadIntroduceImage.fontChange(type='file', name="uploadIntroduceImage", accept="image/*")
 
-                    #introduceImage
-                        #categoryTitle.text-left
-                            span.fontChange 자기소개 이미지 수정하기
-                        #editCategory
-                            span.fontChange 자기소개 이미지는 가로 1200px, 세로 300px이 최대입니다.
-                            #imagePreview.text-center
-                                img(src='/resource/images/mypage/introduce_default.png')
-                        #uploadFile.form-group
-                            label.fontChange(for="uploadIntroduce") 이미지 파일을 업로드 해 주세요
-                            input#uploadIntroduce.fontChange(type='file', name="introduceImage", accept="image/*")
+                                script(type='text/javascript').
+                                    $(document).ready(function() {
+                                        $('#uploadIntroduceImage').fileupload({
+                                            url : '/upload',
+                                            dataType: 'json',
+                                            add: function(e, data){
+                                                var uploadFile = data.files[0];
+                                                if (!(/png|jpe?g|gif/i).test(uploadFile.name)) {
+                                                    alert('png, jpg, gif 만 가능합니다');
+                                                    goUpload = false;
+                                                } else if (uploadFile.size > 5000000) { // 5mb
+                                                    alert('파일 용량은 5메가를 초과할 수 없습니다.');
+                                                }
+                                                data.submit();
+                                            },
+                                            done: function (e, data) {
+                                                var code = data.textStatus;
+                                                if(code == 'success') {
+                                                    $('#filePath').val(data.result.files[0].name);
+                                                    alert(data.result.files[0].name);
+                                                    alert(code);
+                                                } else {
 
-                    #configCategory
-                        #categoryTitle.text-left
-                            span 카테고리 수정하기
-                        br
-                        #textBody.fontChange
-                            .col-lg-6
-                                span.text-left 현재 카테고리 이름
-                            .col-lg-6
-                                span.text-left 변경할 카테고리 이름
-                        #categories.fontChange
-                            #categoryItems
-                                each item in categoryItems
-                                    mixin configCategory(item.name)
-                        br
-                        #addCategory.text-right.fontChange
-                            button(type="button" class="btn btn-warning") 추가하기
+                                                }
+                                            },
+                                            fail: function(){
+                                                alert("서버와 통신 중 문제가 발생했습니다");
+                                            }
+                                        });
+                                    });
 
-                    #submit.text-center.fontChange
-                        button(type="button" class="btn btn-primary btn-lg") 적용하기
+
+                        #configCategory
+                            #categoryTitle.text-left
+                                span 카테고리 수정하기
+                            br
+                            #textBody.fontChange
+                                .col-lg-6
+                                    strong.text-left 현재 카테고리 이름
+                                .col-lg-6
+                                    strong.text-left 변경할 카테고리 이름
+                            #categories.fontChange
+                                #categoryItems
+                                    each item, index in categoryItems
+                                        mixin configCategory(item.name, index)
+                            br
+                        #addCategory
+                            #categoryTitle.text-left
+                                span 카테고리 추가하기(카테고리는 총 9개까지 가능합니다)
+                            #addCategoryItems
+                            #addCategoryBtn.text-right.fontChange
+                                button(type="button" class="btn btn-warning") 추가하기
+
+                        #submitArea.text-center.fontChange
+                            input#addCategoryHidden.hiddenObject(type='text', name="addCategory[]")
+                            input#delCategoryHidden.hiddenObject(type='text', name="delCategory[]")
+                            button#submitBtn(type="submit" class="btn btn-primary btn-lg") 적용하기
 
             #bottom.text-center
                 span 개발자 - 박상욱, 디자이너 - 김광훈
@@ -111,9 +161,37 @@ html
             $('#introduce_body').slideToggle("slow", "easeOutQuint", function(){$('.fold_img').toggle();});
         });
     script(type='text/javascript').
-        //$("#addCategory").live("click", function() {
-        //    $("#categories").append(</br>);
-        //});
-        $( document ).on( "click", "#addCategory", function() {
-            $("#categories").append('<input class="form-control" type="text" value="Test"></input>');
+        $( document ).on( "click", "#addCategoryBtn", function() {
+            $("#addCategoryItems").append('<div id="addCategoryItem"><div id="textBody"><div class="col-lg-6"><label for="addCategoryItem">추가 할 카테고리 이름</label></div><div class="col-lg-6"><input id="addCategoryItem" class="form-control" type="text" value="" name="addCategory[]"></input></div></div></div>');
+        });
+    script(type='text/javascript').
+        $(document).ready(function() {
+            $("#configForm").submit(function() { // intercepts the submit event
+                var answer = confirm('적용하시겠습니까?\n삭제한 카테고리 내의 포트폴리오는 모두 같이 삭제됩니다');
+                if(!answer){
+                    return false;
+                }
+
+                $.ajax({ // make an AJAX request
+                    type: "POST",
+                    url: "/api/config/submit", // it's the URL of your component B
+                    data: $("#configForm").serializeObject(), // serializes the form's elements
+                    success: function(data)
+                    {
+                        if(data.result == 500){
+                            window.location="/view/setting";
+                        }
+                        else if(data.result == 501){
+                            alert('가능한 카테고리 개수가 초과했습니다');
+                        }
+                        else if(data.result == 502){
+                            alert('이미지 수정에 실패하였습니다');
+                        }
+                        else {
+                            alert('알 수 없는 오류. 다시 시도해 주세요');
+                        }
+                    }
+                });
+                return false;
+            });
         });

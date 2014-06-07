@@ -9,6 +9,7 @@ html
         script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
 
         script(src='/javascripts/bootstrap.min.js')
+
         link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
         link(rel='stylesheet', href='/stylesheets/bootstrap-theme.min.css')
         link(rel='stylesheet', href='/stylesheets/style.css')
@@ -57,28 +58,33 @@ html
                 p#infoText.
                     최신 웹표준을 준수하는 브라우저만 지원합니다. Chrome과 Firefox를 추천합니다.
         script(type='text/javascript').
-                $(document).ready(function() {
-                    $("#loginForm").submit(function() { // intercepts the submit event
-                        $.ajax({ // make an AJAX request
-                            type: "POST",
-                            url: "/api/login", // it's the URL of your component B
-                            data: $("#loginForm").serialize(), // serializes the form's elements
-                            success: function(data)
-                            {
-                                if(data.result == 100){
-                                    window.location="/view/mypage";
-                                }
-                                else if(data.result == 101){
-                                    alert('해당 이메일이 존재하지 않습니다');
-                                }
-                                else if(data.result == 102){
-                                    alert('비밀번호가 잘못되었습니다');
-                                }
-                                else {
-                                    alert('알 수 없는 오류. 다시 시도해 주세요');
-                                }
-                            }
-                        });
+            $(document).ready(function() {
+                $("#loginForm").submit(function() { // intercepts the submit event
+                    if( $('#input_email').val() == "" || $('#input_password').val() == "" ){
+                        alert('이메일 또는 비밀번호가 입력되지 않았습니다');
                         return false;
+                    }
+
+                    $.ajax({ // make an AJAX request
+                        type: "POST",
+                        url: "/api/login", // it's the URL of your component B
+                        data: $("#loginForm").serialize(), // serializes the form's elements
+                        success: function(data)
+                        {
+                            if(data.result == 100){
+                                window.location="/view/mypage";
+                            }
+                            else if(data.result == 101){
+                                alert('해당 이메일이 존재하지 않습니다');
+                            }
+                            else if(data.result == 102){
+                                alert('비밀번호가 잘못되었습니다');
+                            }
+                            else {
+                                alert('알 수 없는 오류. 다시 시도해 주세요');
+                            }
+                        }
                     });
+                    return false;
                 });
+            });
