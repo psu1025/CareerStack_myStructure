@@ -223,10 +223,10 @@ app.use('/upload', function(req, res, next){
     console.log(util.inspect(req.user));
     upload.fileHandler({
         uploadDir: function(){
-            return __dirname + '/public/uploads/';// + user_id;
+            return __dirname + '/public/uploads/' + req.user._id;
         },
         uploadUrl: function(){
-            return '/uploads/';// + user_id;
+            return '/uploads/';+ req.user._id;
         }
     })(req, res, next);
 });
