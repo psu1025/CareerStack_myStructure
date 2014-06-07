@@ -42,8 +42,8 @@ html
                     a(href='/api/logout')
                         img(src='/resource/images/mypage/logout.png',id='logout')
             #introduce
-                #introduce_body
-                    img(src='/resource/images/mypage/introduce_default.png')
+                #introduce_body.text-center
+                    img(src='#{introduceUrl}')
                 #introduce_fold.text-center
                     img.text-center.fold_img(src='/resource/images/mypage/fold_up.png', id='fold_img')
                     img.text-center.fold_img(src='/resource/images/mypage/fold_down.png', id='fold_img', style='display:none')

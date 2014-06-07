@@ -34,7 +34,7 @@ exports.viewMain = function(req, res){
 
 exports.viewMyPage = function(req, res){
     var user = req.user;
-    schema.scUser.findOne({_id:user._id}).select('categoryList')
+    schema.scUser.findOne({_id:user._id})
         .exec(
             function(err, doc){
                 if(err){
@@ -50,7 +50,8 @@ exports.viewMyPage = function(req, res){
                         console.log(util.inspect(doc));
                         res.render(JADE_PATH+'mypage.jade', {
                             name:req.user.name,
-                            categoryItems:doc.categoryList
+                            categoryItems:doc.categoryList,
+                            introduceUrl:doc.introduceUrl
                         });
                     }
                     else{
@@ -71,7 +72,7 @@ exports.viewJoin = function(req, res){
 
 exports.viewCareerList = function(req, res){
     var user = req.user;
-    schema.scUser.findOne({_id:user._id}).select('categoryList')
+    schema.scUser.findOne({_id:user._id})
         .exec(
         function(err, doc){
             if(err){
@@ -89,7 +90,8 @@ exports.viewCareerList = function(req, res){
                         name:req.user.name,
                         categoryItems:doc.categoryList,
                         selectCategory:req.params.category,
-                        careerItems:{"length":0}
+                        careerItems:{"length":0},
+                        introduceUrl:doc.introduceUrl
                     });
                 }
                 else{
@@ -106,7 +108,7 @@ exports.viewCareerList = function(req, res){
 
 exports.selectTemplate = function(req, res){
     var user = req.user;
-    schema.scUser.findOne({_id:user._id}).select('categoryList')
+    schema.scUser.findOne({_id:user._id})
         .exec(
         function(err, doc){
             if(err){
@@ -124,7 +126,8 @@ exports.selectTemplate = function(req, res){
                         name:req.user.name,
                         categoryItems:doc.categoryList,
                         selectCategory:req.params.category,
-                        careerItems:{"length":0}
+                        careerItems:{"length":0},
+                        introduceUrl:doc.introduceUrl
                     });
                 }
                 else{
@@ -141,7 +144,7 @@ exports.selectTemplate = function(req, res){
 
 exports.writeCareer = function(req, res){
     var user = req.user;
-    schema.scUser.findOne({_id:user._id}).select('categoryList')
+    schema.scUser.findOne({_id:user._id})
         .exec(
         function(err, doc){
             if(err){
@@ -159,7 +162,8 @@ exports.writeCareer = function(req, res){
                         name:req.user.name,
                         categoryItems:doc.categoryList,
                         selectCategory:req.params.category,
-                        careerItems:{"length":0}
+                        careerItems:{"length":0},
+                        introduceUrl:doc.introduceUrl
                     });
                 }
                 else{
@@ -189,7 +193,6 @@ exports.setting = function(req, res){
             else{
                 if(doc){
                     //categoryList를 가지고 render
-                    console.log(util.inspect(doc));
                     res.render(JADE_PATH+'setting.jade', {
                         name:req.user.name,
                         categoryItems:doc.categoryList,

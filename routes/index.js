@@ -469,10 +469,14 @@ exports.changeUserConfig = function(req, res){
 
     var user = req.user;
     var category = req.body.category;
-    var addCategory = req.body.addCategory
-    var filePath = '/uploads/' + user._id + '/' + req.body.filePath;
+    var addCategory = req.body.addCategory;
+    var delCategory = req.body.delCategory;
 
-    //
+    var filePath = "";
+    if(req.body.filePath != ""){
+        filePath = '/uploads/' + user._id + '/' + req.body.filePath;
+    }
+
     if((category.length + addCategory.length) > 9){
         result = 501;
         data.result = result;
@@ -484,63 +488,63 @@ exports.changeUserConfig = function(req, res){
     .exec(
         function(err, doc){
             if(err){
-                result = 780;
+                result = 503;
                 data.result = result;
                 res.json(data);
-                return;
             }
             else{
+                //introduceUrl 변경
+                if(filePath != ""){
+                    doc.introduceUrl = filePath;
+                }
 
+                //Category 삭제처리
+                if(delCategory.length > 0){
+                    delCategory.forEach(function(item, idx){
+                        doc.categoryList.forEach(function(categoryItem, idx){
+                            if(categoryItem.name == item){
+                                doc.categoryList.splice(idx, 1);
+                            }
+                        });
+                    });
+                }
+
+                //Category 이름 변경처리
+                if(category.length > 0){
+                    category.forEach(function(item, idx){
+                        //변경된 이름이 있다면 변경처리
+                        if(item.after != ''){
+                            doc.categoryList.forEach(function(categoryItem, idx){
+                                if(categoryItem.name == item.before){
+                                    categoryItem.name = item.after;
+                                }
+                            });
+                        }
+                    });
+                }
+
+                //Category 추가처리
+                if(addCategory.length > 0){
+                    addCategory.forEach(function(item, idx){
+                        doc.categoryList.push(
+                            new schema.scCategory({
+                                name: item,
+                                description: '추가된 카테고리 입니다'
+                            })
+                        )
+                    });
+                }
+
+                //save
+                doc.save();
+
+                //성공 처리
+                result = 500;
+                data.result = result;
+                res.json(data);
             }
         }
     );
-
-//    async.waterfall([
-//        //filePath update
-//        function(callback){
-//            schema.scUser.update(
-//                {_id:user._id},
-//                {introduceUrl:filePath},
-//                function(err){
-//                    if(err){
-//                        result = 780;
-//                        callback(err);
-//                        return;
-//                    }
-//                    else{
-//                        //수정 성공
-//                        callback(null);
-//                        return;
-//                    }
-//                }
-//            );
-//        },
-//
-//        //delete Category
-//        function(callback){
-//            schema.scUser.remove(
-//                {_id:user._id},
-//            );
-//        },
-//
-//        //update Category
-//        function(callback){
-//
-//        },
-//
-//        //add Category
-//        function(callback){
-//
-//        }
-//    ],
-//        function(err){
-//            data.result = result;
-//            res.json(data);
-//            return;
-//        }
-//    );
-
-    res.json(data);
 };
 
 //Activity Api Implement

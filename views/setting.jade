@@ -55,8 +55,8 @@ html
                     a(href='/api/logout')
                         img(src='/resource/images/mypage/logout.png',id='logout')
             #introduce
-                #introduce_body
-                    img(src='/resource/images/mypage/introduce_default.png')
+                #introduce_body.text-center
+                    img(src='#{introduceUrl}')
                 #introduce_fold.text-center
                     img.text-center.fold_img(src='/resource/images/mypage/fold_up.png', id='fold_img')
                     img.text-center.fold_img(src='/resource/images/mypage/fold_down.png', id='fold_img', style='display:none')
@@ -75,10 +75,14 @@ html
                     mixin configCategory(name, index)
                         #configCategoryItem
                             #textBody
+                                //.col-lg-6
+                                //    input#beforeCategory.form-control(type='text', value='#{name}' name="category[#{index}][before]" readonly="readonly")
+                                //.col-lg-6
+                                //    input#afterCategory.form-control(type='text', value="" name="category[#{index}][after]")
                                 .col-lg-6
-                                    input#beforeCategory.form-control(type='text', value='#{name}' name="category[#{index}][before]" readonly="readonly")
+                                    input#beforeCategory.form-control(type='text', value='#{name}' name="category[][before]" readonly="readonly")
                                 .col-lg-6
-                                    input#afterCategory.form-control(type='text', value="" name="category[#{index}][after]")
+                                    input#afterCategory.form-control(type='text', value="" name="category[][after]")
                             button#categoryDeleteBtn(type="button" class="btn btn-default" onclick="delCategory(this);return false;") 삭제하기
 
 
@@ -88,9 +92,9 @@ html
                             #categoryTitle.text-left
                                 span.fontChange 자기소개 이미지 수정하기
                             #editCategory
-                                strong.fontChange.text-info 자기소개 이미지는 가로 1200px, 세로 300px이 최대입니다.
+                                strong.fontChange.text-info 자기소개 이미지는 가로 1200px, 세로 300px을 권장합니다.
                                 #imagePreview.text-center
-                                    img(src='#{introduceUrl}')
+                                    img#introduceImagePreview(src='#{introduceUrl}')
                             #uploadFile.form-group
                                 label.fontChange(for="uploadIntroduce") 이미지 파일을 업로드 해 주세요
                                 input#filePath.hiddenObject(type='text', name="filePath")
@@ -115,8 +119,7 @@ html
                                                 var code = data.textStatus;
                                                 if(code == 'success') {
                                                     $('#filePath').val(data.result.files[0].name);
-                                                    alert(data.result.files[0].name);
-                                                    alert(code);
+                                                    alert(data.result.files[0].name + '성공적으로 업로드 되었습니다.\n반영 하시려면 적용을 눌러주세요.');
                                                 } else {
 
                                                 }
@@ -146,8 +149,8 @@ html
                             #categoryTitle.text-left
                                 span 카테고리 추가하기(카테고리는 총 9개까지 가능합니다)
                             #addCategoryItems
-                            #addCategoryBtn.text-right.fontChange
-                                button(type="button" class="btn btn-warning") 추가하기
+                            #addCategoryBtnArea.text-right.fontChange
+                                button#addCategoryBtn(type="button" class="btn btn-warning") 추가하기
 
                         #submitArea.text-center.fontChange
                             input#addCategoryHidden.hiddenObject(type='text', name="addCategory[]")
@@ -179,6 +182,7 @@ html
                     success: function(data)
                     {
                         if(data.result == 500){
+                            alert('성공적으로 변경되었습니다')
                             window.location="/view/setting";
                         }
                         else if(data.result == 501){
@@ -188,7 +192,7 @@ html
                             alert('이미지 수정에 실패하였습니다');
                         }
                         else {
-                            alert('알 수 없는 오류. 다시 시도해 주세요');
+                            alert('알 수 없는 오류. 다시 시도해 주세요\nCode:' + data.result);
                         }
                     }
                 });

@@ -202,13 +202,11 @@ app.use(allowCrossDomain);
 
 // 로그
 // 포맷 (접속 IP - 처리 결과 [날짜(GMT)] 응답시간 요청크기 메소드 접근url 유저정보)
-app.use(express.logger({
-    format: ':remote-addr - :status [:date] :response-time ms :res[content-length] " :method :url " ":user-agent"'
-}));
+//app.use(express.logger({
+//    format: ':remote-addr - :status [:date] :response-time ms :res[content-length] " :method :url " ":user-agent"'
+//}));
 //압축
 app.use(express.compress());              //리퀘스트 압축
-
-
 
 app.use(express.json());
 app.use(express.urlencoded());
