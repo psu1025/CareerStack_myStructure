@@ -221,12 +221,14 @@ app.use(passport.session());
 //upload 체크
 app.use('/upload', function(req, res, next){
     console.log(util.inspect(req.user));
+    var user_id = req.user._id;
+    console.log(user_id);
     upload.fileHandler({
         uploadDir: function(){
-            return __dirname + '/public/uploads/' + req.user._id;
+            return __dirname + '/public/uploads/' + user_id;
         },
         uploadUrl: function(){
-            return '/uploads/' + req.user._id;
+            return '/uploads/' + user_id;
         }
     })(req, res, next);
 });
