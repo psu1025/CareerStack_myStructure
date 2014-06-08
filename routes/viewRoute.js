@@ -162,7 +162,7 @@ exports.writeCareer = function(req, res){
                         name:req.user.name,
                         categoryItems:doc.categoryList,
                         selectCategory:req.params.category,
-                        careerItems:{"length":0},
+                        templateItems:{"length":0},
                         introduceUrl:doc.introduceUrl
                     });
                 }

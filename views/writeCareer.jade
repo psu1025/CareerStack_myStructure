@@ -1,5 +1,5 @@
 //
-                                    Created by Augustus on 14. 5. 0.
+    Created by Augustus on 14. 5. 0.
 doctype html
 html
     head
@@ -9,8 +9,16 @@ html
         script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
         script(src='/javascripts/bootstrap.min.js')
         script(src='/javascripts/jquery-ui-1.10.4.custom.min.js')
+
+        link(rel='stylesheet', href='/stylesheets/jquery-ui-1.10.4.custom.min.css')
         link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
         link(rel='stylesheet', href='/stylesheets/bootstrap-theme.min.css')
+
+        script(src='/javascripts/nicEdit.js')
+        script(src='/javascripts/moment.js')
+        script(src='/javascripts/pikaday.js')
+        link(rel='stylesheet', href='/stylesheets/pikaday.css')
+
         script(type='text/javascript').
             WebFontConfig = {
             custom: {
@@ -28,16 +36,38 @@ html
                 s.parentNode.insertBefore(wf, s);
             })();
         script(type='text/javascript').
+            function getElementCounter(){
+                var count = Number($('#templateCounter').val());
+                count++;
+                $('#templateCounter').val(count);
+                return count
+            }
+        script(type='text/javascript').
             function templateHtml(type){
                 var html = "";
                 if(type == 'memo'){
-                    html = '<div id="templateWrapper" class="fontChange"><div id="templateBodyWrapper"><div id="templateItem" class="form-group"><label class="control-label">이름 입력하기</label><input id="templateType" class="form-control hidden" type="text" name="templates[][type]" value="memo"></input><input id="templateName" class="form-control" type="text" name="templates[][name]" placeholder="템플릿 이름을 입력하세요"></input></div><div id="templateItem" class="form-group"><label class="control-label">자유 내용 입력</label><input id="templateName" class="form-control" type="text" name="templates[][attribute][memo]" placeholder="자유 내용 입력"></input></div></div><div id="configButtonWrapper" class="text-right btn-group"><span><button class="btn btn-default" value="123123" onclick="addTemplate(this);return false;">추가하기</button><button class="btn btn-default" onclick="delTemplateItem(this);return false;">삭제하기</button></span></div></div>';
+                    html = '<div id="templateWrapper" class="fontChange"><div id="templateBodyWrapper"><div id="templateItem" class="form-group"><label class="control-label">이름 입력하기</label><input id="templateType" class="form-control hidden" type="text" name="templates[][type]" value="memo"></input><input id="templateName" class="form-control" type="text" name="templates[][name]" placeholder="템플릿 이름을 입력하세요"></input></div><div id="templateItem" class="form-group"><label class="control-label">자유 내용 입력</label><input id="templateItemInput' + getElementCounter() + '" class="form-control" type="text" name="templates[][attribute][memo]" placeholder="자유 내용 입력"></input></div></div><div id="configButtonWrapper" class="text-right btn-group"><span><button class="btn btn-default" value="123123" onclick="addTemplate(this);return false;">추가하기</button><button class="btn btn-default" onclick="delTemplateItem(this);return false;">삭제하기</button></span></div></div>';
                 }
                 else if(type == 'text'){
-                    html = '<div id="templateWrapper" class="fontChange"><div id="templateBodyWrapper"><div id="templateItem" class="form-group"><label class="control-label">이름 입력하기</label><input id="templateType" class="form-control hidden" type="text" name="templates[][type]" value="text"></input><input id="templateName" class="form-control" type="text" name="templates[][name]" placeholder="템플릿 이름을 입력하세요"></input></div><div id="templateItem" class="form-group"><label class="control-label">자유 내용 입력</label><textarea id="textArea" class="form-control" name="templates[][attribute][text]" rows="10"></textarea></div></div><div id="configButtonWrapper" class="text-right btn-group"><span><button class="btn btn-default" value="123123" onclick="addTemplate(this);return false;">추가하기</button><button class="btn btn-default" onclick="delTemplateItem(this);return false;">삭제하기</button></span></div></div>';
+                    html = '<div id="templateWrapper" class="fontChange"><div id="templateBodyWrapper"><div id="templateItem" class="form-group"><label class="control-label">이름 입력하기</label><input id="templateType" class="form-control hidden" type="text" name="templates[][type]" value="text"></input><input id="templateName" class="form-control" type="text" name="templates[][name]" placeholder="템플릿 이름을 입력하세요"></input></div><div id="templateItem" class="form-group"><label class="control-label">자유 내용 입력</label><textarea id="templateItemInput' + getElementCounter() + '" class="form-control textAreaWithTextEditor" name="templates[][attribute][text]" rows="10"></textarea></div></div><div id="configButtonWrapper" class="text-right btn-group"><span><button class="btn btn-default" value="123123" onclick="addTemplate(this);return false;">추가하기</button><button class="btn btn-default" onclick="delTemplateItem(this);return false;">삭제하기</button></span></div></div>';
                 }
                 else if(type == 'link'){
-                    html = '<div id="templateBodyWrapper" class="fontChange"><div id="templateItem" class="form-group"><label class="control-label">이름 입력하기</label><input id="templateType" class="form-control hidden" type="text" value="memo" name="templates[][type]"></input><input id="templateName" class="form-control" type="text" placeholder="템플릿 이름을 입력하세요" name="templates[][name]"></input></div><div id="templateItem" class="form-group"><label class="control-label">링크 이름 입력</label><input class="form-control" type="text" placeholder="링크 이름 입력" name="templates[][attribute][linkname]"></input></div><div id="templateItem" class="form-group"><label class="control-label">링크 주소 입력</label><input class="form-control" type="text" placeholder="링크 주소 입력" name="templates[][attribute][link]"></input></div><div id="configButtonWrapper" class="text-right btn-group"><span><button class="btn btn-default" onclick="addTemplate(this);return false;" value="123123">추가하기</button><button class="btn btn-default" onclick="delTemplateItem(this);return false;">삭제하기</button></span></div></div>';
+                    html = '<div id="templateBodyWrapper" class="fontChange"><div id="templateItem" class="form-group"><label class="control-label">이름 입력하기</label><input id="templateType" class="form-control hidden" type="text" value="memo" name="templates[][type]"></input><input id="templateName" class="form-control" type="text" placeholder="템플릿 이름을 입력하세요" name="templates[][name]"></input></div><div id="templateItem" class="form-group"><label class="control-label">링크 이름 입력</label><input class="form-control" id="templateItemInput' + getElementCounter() + '" type="text" placeholder="링크 이름 입력" name="templates[][attribute][linkname]"></input></div><div id="templateItem" class="form-group"><label class="control-label">링크 주소 입력</label><input id="templateItemInput' + getElementCounter() +'" class="form-control" type="text" placeholder="링크 주소 입력" name="templates[][attribute][link]"></input></div><div id="configButtonWrapper" class="text-right btn-group"><span><button class="btn btn-default" onclick="addTemplate(this);return false;" value="123123">추가하기</button><button class="btn btn-default" onclick="delTemplateItem(this);return false;">삭제하기</button></span></div></div>';
+                }
+                else if(type == 'date'){
+                    html = '<div id="templateWrapper" class="fontChange"><div id="templateBodyWrapper"><div id="templateItem" class="form-group"><label class="control-label">이름 입력하기</label><input id="templateType" class="form-control hidden" type="text" name="templates[][type]" value="date"></input><input id="templateName" class="form-control" type="text" name="templates[][name]" placeholder="템플릿 이름을 입력하세요"></input></div><div id="templateItem" class="form-group"><label class="control-label">날짜 입력</label><input id="templateItemInput' + getElementCounter() + '" class="form-control dateSelector" type="text" readonly="readonly" name="templates[][attribute][date]" placeholder="Date"></input></div></div><div id="configButtonWrapper" class="text-right btn-group"><span></span></div></div>';
+                }
+                else if(type == 'period'){
+                    html = '<div id="templateWrapper" class="fontChange"><div id="templateBodyWrapper"><div id="templateItem" class="form-group"><label class="control-label">이름 입력하기</label><input id="templateType" class="form-control hidden" type="text" name="templates[][type]" value="date"></input><input id="templateName" class="form-control" type="text" name="templates[][name]" placeholder="템플릿 이름을 입력하세요"></input></div><div id="templateItem" class="form-group"><label class="control-label">시작 날짜 입력</label><input id="templateItemInput'+ getElementCounter() +'" class="form-control dateSelector" type="text" readonly="readonly" name="templates[][attribute][startdate]" placeholder="Start Date"></input></div><div id="templateItem" class="form-group"><label class="control-label">끝 날짜 입력</label><input id="templateItemInput'+ getElementCounter() +'" class="form-control dateSelector" type="text" readonly="readonly" name="templates[][attribute][enddate]" placeholder="End Date"></input></div></div><div id="configButtonWrapper" class="text-right btn-group"><span><button class="btn btn-default" value="123123" onclick="addTemplate(this);return false;">추가하기</button><button class="btn btn-default" onclick="delTemplateItem(this);return false;">삭제하기</button></span></div></div>';
+                }
+                else if(type == 'picture'){
+                    html = '';
+                }
+                else if(type == 'file'){
+                    html = '';
+                }
+                else if(type == 'map'){
+                    html = '';
                 }
                 else{
                     html = '<div id="templateWrapper" class="fontChange"><div id="templateBodyWrapper"><div id="templateItem" class="form-group"><label class="control-label">이름 입력하기</label><input id="templateType" class="form-control hidden" type="text" name="templates[][type]" value="none"></input><input id="templateName" class="form-control" type="text" name="templates[][name]" placeholder="템플릿 이름을 입력하세요"></input></div></div><div id="configButtonWrapper" class="text-right btn-group"><span><button class="btn btn-default" value="123123" onclick="addTemplate(this);return false;">추가하기</button><button class="btn btn-default" onclick="delTemplateItem(this);return false;">삭제하기</button></span></div></div>';
@@ -52,18 +82,26 @@ html
         script(type='text/javascript').
             function addTemplate(btnObject){
                 $('#myModal')
-                    .one('hidden.bs.modal', function(){
+                    .one('hide.bs.modal', function(){
                         //modal이 꺼진 후의 callback 함수
                         //selectTemplateHidden의 value대로 template을 추가하고, 값을 초기화한다
                         if($('#selectTemplateHidden').val() != ""){
                             $(btnObject).parents("#templateWrapper").after(function(){
                                 return templateHtml($('#selectTemplateHidden').val());
                             });
+                            //var htmlval = templateHtml($('#selectTemplateHidden').val());
+                            //$(htmlval).appendTo($(btnObject).parents("#templateWrapper"));
                         }
+
+                        if($('#selectTemplateHidden').val() == 'text'){
+                            new nicEditor().panelInstance('templateItemInput' + $('#templateCounter').val());
+                        }
+
                         $('#selectTemplateHidden').val("");
                     })
                     .modal();
             }
+
     body
         #wholeDiv
             #top
@@ -113,26 +151,19 @@ html
                             #templateWrapper.fontChange
                                 #templateBodyWrapper
                                     #templateItem.form-group
-                                        label.control-label
-                                            | 이름 입력하기
-                                        input#templateType.form-control.hidden(type='text', name='templates[][type]', value='memo')
-                                        input#templateName.form-control(type='text', name='templates[][name]', placeholder='템플릿 이름을 입력하세요')
+                                        label.control-label 이름 입력하기
+                                        input.form-control.hidden#templateType(type='text', value='date', name='templates[][type]')
+                                        input.form-control#templateName(type='text', placeholder='템플릿 이름을 입력하세요', name='templates[][name]')
                                     #templateItem.form-group
-                                        label.control-label
-                                            | 링크 이름 입력
-                                        input.form-control(type='text', name='templates[][attribute][linkname]', placeholder='링크 이름 입력')
-                                    #templateItem.form-group
-                                        label.control-label
-                                            | 링크 주소 입력
-                                        input.form-control(type='text', name='templates[][attribute][link]', placeholder='링크 주소 입력')
-                                    #configButtonWrapper.text-right.btn-group
-                                        span
-                                            button.btn.btn-default(value='123123', onclick='addTemplate(this);return false;')
-                                                | 추가하기
-                                            button.btn.btn-default(onclick='delTemplateItem(this);return false;')
-                                                | 삭제하기
+                                        label.control-label 업로드 할 파일 선택
+                                        input.form-control.dateSelector(type='text', id='templateItemInputB', placeholder='End Date', name='templates[][attribute][enddate]', readonly="readonly")
+                                #configButtonWrapper.text-right.btn-group
+                                    span
+                                        button.btn.btn-default(onclick="addTemplate(this);return false;" value="123123") 추가하기
+                                        button.btn.btn-default(onclick="delTemplateItem(this);return false;") 삭제하기
                         #uploadCareer.text-center.fontChange
                             input#selectTemplateHidden.hiddenObject(type='text')
+                            input#templateCounter.hiddenObject(type='text', value='#{templateItems.length}')
                             button.btn.btn-primary.btn-lg(type="submit") 작성 완료
 
 
@@ -142,63 +173,54 @@ html
                             .modal-header
                                 button.close(type='button', data-dismiss='modal', aria-hidden='true')
                                 h4.fontChange.modal-title 추가할 템플릿 선택하기
-                                p.fontChange.text-primary 모든 템플릿은 이름을 반드시 작성해야 합니다
                             .modal-body.fontChange
+                                p.fontChange.text-primary 모든 템플릿에는 이름이 반드시 포함됩니다(작성필수)
                                 .radio
                                     label
                                         input#templateRadio(type="radio" value="memo" name="selectTemplate")
-                                        span 한줄 메모를 남길 수 있는 템플릿
-                                        br
-                                        img(src='/resource/images/mypage/config.png',id='config')
-
+                                        p.lead.marginZero 한 줄 메모를 남길 수 있는 템플릿
+                                        small 한 줄 텍스트
                                 .radio
                                     label
                                         input#templateRadio(type="radio" value="text" name="selectTemplate")
-                                        span 긴 글을 입력할 수 있는 템플릿
-                                        br
-                                        img(src='/resource/images/mypage/config.png',id='config')
+                                        p.lead 긴 글을 입력할 수 있는 템플릿
+                                        small 텍스트 데이터를 포함한 리치 텍스트
 
                                 .radio
                                     label
                                         input#templateRadio(type="radio" value="link" name="selectTemplate")
-                                        span 링크를 입력할 수 있는 템플릿
-                                        br
-                                        img(src='/resource/images/mypage/config.png',id='config')
+                                        p.lead 링크를 입력할 수 있는 템플릿
+                                        small 링크를 걸 링크 이름, 링크 주소
 
                                 .radio
                                     label
                                         input#templateRadio(type="radio" value="date" name="selectTemplate")
-                                        span 날짜를 입력할 수 있는 템플릿
-                                        br
-                                        img(src='/resource/images/mypage/config.png',id='config')
+                                        p.lead 날짜를 입력할 수 있는 템플릿
+                                        small 하나의 datepicker
 
                                 .radio
                                     label
                                         input#templateRadio(type="radio" value="period" name="selectTemplate")
-                                        span 기간을 입력할 수 있는 템플릿
-                                        br
-                                        img(src='/resource/images/mypage/config.png',id='config')
+                                        p.lead 기간을 입력할 수 있는 템플릿
+                                        small 시작 날짜와 끝 날짜를 선택할 수 있는 두 개의 datepicker
 
                                 .radio
                                     label
                                         input#templateRadio(type="radio" value="picture" name="selectTemplate")
-                                        span 사진을 올릴 수 있는 템플릿
-                                        br
-                                        img(src='/resource/images/mypage/config.png',id='config')
+                                        p.lead 사진을 올릴 수 있는 템플릿
+                                        small 사진을 업로드 할 수 있는 다이얼로그, 미리보기(800x300)
 
                                 .radio
                                     label
                                         input#templateRadio(type="radio" value="file" name="selectTemplate")
-                                        span 파일을 올릴 수 있는 템플릿
-                                        br
-                                        img(src='/resource/images/mypage/config.png',id='config')
+                                        p.lead 파일을 올릴 수 있는 템플릿
+                                        small 파일을 업로드 할 수 있는 다이얼로그
 
                                 .radio
                                     label
                                         input#templateRadio(type="radio" value="map" name="selectTemplate")
-                                        span 지도를 입력할 수 있는 템플릿
-                                        br
-                                        img(src='/resource/images/mypage/config.png',id='config')
+                                        p.lead 지도를 입력할 수 있는 템플릿
+                                        small 위치를 검색할 수 있는 텍스트 창, 지도 캔버스
 
                             .modal-footer.fontChange
                                 button.btn.btn-default(type='button', data-dismiss='modal') 취소
@@ -224,3 +246,19 @@ html
                 $('#myModal').modal('hide')
             }
         });
+
+        $(function() {
+            $('body').on('click','.dateSelector', function() {
+                $(this).datepicker('destroy').datepicker({
+                    showOn:'focus',
+                    dateFormat: "yy-mm-dd",
+                    changeMonth: true,
+                    changeYear: true,
+                    gotoCurrent: true,
+                    maxDate: "+2m +1w"
+                }).focus();
+            });
+        });
+
+    script(type='text/javascript').
+        bkLib.onDomLoaded(nicEditors.allTextAreas);
