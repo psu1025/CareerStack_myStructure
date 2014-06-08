@@ -99,7 +99,6 @@ html
                                 label.fontChange(for="uploadIntroduce") 이미지 파일을 업로드 해 주세요(png, jpg, gif)
                                 input#filePath.hiddenObject(type='text', name="filePath")
                                 input#uploadIntroduceImage.fontChange(type='file', name="uploadIntroduceImage", accept="image/*")
-
                                 script(type='text/javascript').
                                     $(document).ready(function() {
                                         $('#uploadIntroduceImage').fileupload({
@@ -110,8 +109,10 @@ html
                                                 if (!(/png|jpe?g|gif/i).test(uploadFile.name)) {
                                                     alert('png, jpg, gif 만 가능합니다');
                                                     goUpload = false;
+                                                    return false;
                                                 } else if (uploadFile.size > 5000000) { // 5mb
                                                     alert('파일 용량은 5메가를 초과할 수 없습니다.');
+                                                    return false;
                                                 }
                                                 data.submit();
                                             },
@@ -121,7 +122,7 @@ html
                                                     $('#filePath').val(data.result.files[0].name);
                                                     alert(data.result.files[0].name + '성공적으로 업로드 되었습니다.\n반영 하시려면 적용을 눌러주세요.');
                                                 } else {
-
+                                                    alert('알 수 없는 문제로 오류가 발생했습니다');
                                                 }
                                             },
                                             fail: function(){

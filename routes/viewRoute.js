@@ -163,7 +163,8 @@ exports.writeCareer = function(req, res){
                         categoryItems:doc.categoryList,
                         selectCategory:req.params.category,
                         templateItems:{"length":0},
-                        introduceUrl:doc.introduceUrl
+                        introduceUrl:doc.introduceUrl,
+                        user_id:user._id
                     });
                 }
                 else{

@@ -14,6 +14,9 @@ html
         link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
         link(rel='stylesheet', href='/stylesheets/bootstrap-theme.min.css')
 
+        script(src="/javascripts/jquery.ui.widget.js")
+        script(src="/javascripts/jquery.fileupload.js")
+
         script(src='/javascripts/nicEdit.js')
         script(src='/javascripts/moment.js')
         script(src='/javascripts/pikaday.js')
@@ -42,6 +45,11 @@ html
                 $('#templateCounter').val(count);
                 return count
             }
+
+            function getElementCounterOnly(){
+                var count = Number($('#templateCounter').val());
+                return count;
+            }
         script(type='text/javascript').
             function templateHtml(type){
                 var html = "";
@@ -52,19 +60,19 @@ html
                     html = '<div id="templateWrapper" class="fontChange"><div id="templateBodyWrapper"><div id="templateItem" class="form-group"><label class="control-label">이름 입력하기</label><input id="templateType" class="form-control hidden" type="text" name="templates[][type]" value="text"></input><input id="templateName" class="form-control" type="text" name="templates[][name]" placeholder="템플릿 이름을 입력하세요"></input></div><div id="templateItem" class="form-group"><label class="control-label">자유 내용 입력</label><textarea id="templateItemInput' + getElementCounter() + '" class="form-control textAreaWithTextEditor" name="templates[][attribute][text]" rows="10"></textarea></div></div><div id="configButtonWrapper" class="text-right btn-group"><span><button class="btn btn-default" value="123123" onclick="addTemplate(this);return false;">추가하기</button><button class="btn btn-default" onclick="delTemplateItem(this);return false;">삭제하기</button></span></div></div>';
                 }
                 else if(type == 'link'){
-                    html = '<div id="templateBodyWrapper" class="fontChange"><div id="templateItem" class="form-group"><label class="control-label">이름 입력하기</label><input id="templateType" class="form-control hidden" type="text" value="memo" name="templates[][type]"></input><input id="templateName" class="form-control" type="text" placeholder="템플릿 이름을 입력하세요" name="templates[][name]"></input></div><div id="templateItem" class="form-group"><label class="control-label">링크 이름 입력</label><input class="form-control" id="templateItemInput' + getElementCounter() + '" type="text" placeholder="링크 이름 입력" name="templates[][attribute][linkname]"></input></div><div id="templateItem" class="form-group"><label class="control-label">링크 주소 입력</label><input id="templateItemInput' + getElementCounter() +'" class="form-control" type="text" placeholder="링크 주소 입력" name="templates[][attribute][link]"></input></div><div id="configButtonWrapper" class="text-right btn-group"><span><button class="btn btn-default" onclick="addTemplate(this);return false;" value="123123">추가하기</button><button class="btn btn-default" onclick="delTemplateItem(this);return false;">삭제하기</button></span></div></div>';
+                    html = '<div id="templateWrapper" class="fontChange"><div id="templateItem" class="form-group"><label class="control-label">이름 입력하기</label><input id="templateType" class="form-control hidden" type="text" value="memo" name="templates[][type]"></input><input id="templateName" class="form-control" type="text" placeholder="템플릿 이름을 입력하세요" name="templates[][name]"></input></div><div id="templateItem" class="form-group"><label class="control-label">링크 이름 입력</label><input class="form-control" id="templateItemInput' + getElementCounter() + '" type="text" placeholder="링크 이름 입력" name="templates[][attribute][linkname]"></input></div><div id="templateItem" class="form-group"><label class="control-label">링크 주소 입력</label><input id="templateItemInput' + getElementCounter() +'" class="form-control" type="text" placeholder="링크 주소 입력" name="templates[][attribute][link]"></input></div><div id="configButtonWrapper" class="text-right btn-group"><span><button class="btn btn-default" onclick="addTemplate(this);return false;" value="123123">추가하기</button><button class="btn btn-default" onclick="delTemplateItem(this);return false;">삭제하기</button></span></div></div>';
                 }
                 else if(type == 'date'){
                     html = '<div id="templateWrapper" class="fontChange"><div id="templateBodyWrapper"><div id="templateItem" class="form-group"><label class="control-label">이름 입력하기</label><input id="templateType" class="form-control hidden" type="text" name="templates[][type]" value="date"></input><input id="templateName" class="form-control" type="text" name="templates[][name]" placeholder="템플릿 이름을 입력하세요"></input></div><div id="templateItem" class="form-group"><label class="control-label">날짜 입력</label><input id="templateItemInput' + getElementCounter() + '" class="form-control dateSelector" type="text" readonly="readonly" name="templates[][attribute][date]" placeholder="Date"></input></div></div><div id="configButtonWrapper" class="text-right btn-group"><span><button class="btn btn-default" onclick="addTemplate(this);return false;" value="123123">추가하기</button><button class="btn btn-default" onclick="delTemplateItem(this);return false;">삭제하기</button></span></div></div>';
                 }
                 else if(type == 'period'){
-                    html = '<div id="templateWrapper" class="fontChange"><div id="templateBodyWrapper"><div id="templateItem" class="form-group"><label class="control-label">이름 입력하기</label><input id="templateType" class="form-control hidden" type="text" name="templates[][type]" value="date"></input><input id="templateName" class="form-control" type="text" name="templates[][name]" placeholder="템플릿 이름을 입력하세요"></input></div><div id="templateItem" class="form-group"><label class="control-label">시작 날짜 입력</label><input id="templateItemInput'+ getElementCounter() +'" class="form-control dateSelector" type="text" readonly="readonly" name="templates[][attribute][startdate]" placeholder="Start Date"></input></div><div id="templateItem" class="form-group"><label class="control-label">끝 날짜 입력</label><input id="templateItemInput'+ getElementCounter() +'" class="form-control dateSelector" type="text" readonly="readonly" name="templates[][attribute][enddate]" placeholder="End Date"></input></div></div><div id="configButtonWrapper" class="text-right btn-group"><span><button class="btn btn-default" value="123123" onclick="addTemplate(this);return false;">추가하기</button><button class="btn btn-default" onclick="delTemplateItem(this);return false;">삭제하기</button></span></div></div>';
+                    html = '<div id="templateWrapper" class="fontChange"><div id="templateBodyWrapper"><div id="templateItem" class="form-group"><label class="control-label">이름 입력하기</label><input id="templateType" class="form-control hidden" type="text" name="templates[][type]" value="period"></input><input id="templateName" class="form-control" type="text" name="templates[][name]" placeholder="템플릿 이름을 입력하세요"></input></div><div id="templateItem" class="form-group"><label class="control-label">시작 날짜 입력</label><input id="templateItemInput'+ getElementCounter() +'" class="form-control dateSelector" type="text" readonly="readonly" name="templates[][attribute][startdate]" placeholder="Start Date"></input></div><div id="templateItem" class="form-group"><label class="control-label">끝 날짜 입력</label><input id="templateItemInput'+ getElementCounter() +'" class="form-control dateSelector" type="text" readonly="readonly" name="templates[][attribute][enddate]" placeholder="End Date"></input></div></div><div id="configButtonWrapper" class="text-right btn-group"><span><button class="btn btn-default" value="123123" onclick="addTemplate(this);return false;">추가하기</button><button class="btn btn-default" onclick="delTemplateItem(this);return false;">삭제하기</button></span></div></div>';
                 }
-                else if(type == 'picture'){
-                    html = '';
+                else if(type == 'image'){
+                    html = '<div id="templateWrapper" class="fontChange"><div id="templateBodyWrapper"><div id="templateItem" class="form-group"><label class="control-label">이름 입력하기</label><input id="templateType" class="form-control hidden" type="text" name="templates[][type]" value="image"></input><input id="templateName" class="form-control" type="text" name="templates[][name]" placeholder="템플릿 이름을 입력하세요"></input></div><div id="templateItem" class="form-group"><label class="control-label">업로드 할 이미지 선택</label><input id="filePath" class="hiddenObject" type="text" name="templates[][attribute][filepath]"></input><input id="uploadImage' + getElementCounter() +'" class="fontChange" type="file" accept="image/*" name="templates[][attribute][fileInput]"></input><p class="help-block">png, jpg, gif만 업로드 하세요. 5메가 제한이 있습니다. 800x300 pixel 크기 제한이 걸립니다</p><script type="text/javascript">$(document).ready(function() {$("#uploadImage'+getElementCounterOnly()+'").fileupload({url : "/upload",dataType: "json",add: function(e, data){var uploadFile = data.files[0];if (!(/png|jpe?g|gif/i).test(uploadFile.name)) {alert("png, jpg, gif 만 가능합니다");goUpload = false;return false;} else if (uploadFile.size > 5000000) { alert("파일 용량은 5메가를 초과할 수 없습니다.");return false;}data.submit();},done: function (e, data) {var code = data.textStatus;if(code == "success") {$("#uploadImage'+getElementCounterOnly()+'").siblings("#filePath").val(data.result.files[0].name);var user_id = $("#userIdHidden").val();var fullFilePath = "/uploads/" + user_id + "/" + data.result.files[0].name;$("#uploadImage'+getElementCounterOnly()+'").siblings("#imagePreviewWrapper").children("#imgPreview").attr("src", fullFilePath);} else {alert("알 수 없는 문제로 오류가 발생했습니다");}},fail: function(){alert("서버와 통신 중 문제가 발생했습니다");}});});</scr'+'ipt><div id="imagePreviewWrapper" class="form-group"><label class="control-label">이미지 프리뷰</label><img id="imgPreview"></img></div></div></div><div id="configButtonWrapper" class="text-right btn-group"><span><button class="btn btn-default" value="123123" onclick="addTemplate(this);return false;">추가하기</button><button class="btn btn-default" onclick="delTemplateItem(this);return false;">삭제하기</button></span></div></div>';
                 }
                 else if(type == 'file'){
-                    html = '';
+                    html = '<div id="templateWrapper" class="fontChange"><div id="templateBodyWrapper"><div id="templateItem" class="form-group"><label class="control-label">이름 입력하기</label><input id="templateType" class="form-control hidden" type="text" name="templates[][type]" value="file"></input><input id="templateName" class="form-control" type="text" name="templates[][name]" placeholder="템플릿 이름을 입력하세요"></input></div><div id="templateItem" class="form-group"><label class="control-label">업로드 할 파일 선택</label><input id="uploadFile' + getElementCounter() +'" class="fontChange" type="file" accept="*" name="templates[][attribute][fileInput]"></input><p class="help-block">20메가 제한이 있습니다.</p><script type="text/javascript">$(document).ready(function() {$("#uploadFile' + getElementCounterOnly() +'").fileupload({url : "/upload",dataType: "json",add: function(e, data){var uploadFile = data.files[0];if (uploadFile.size > 20000000) {alert("파일 용량은 20메가를 초과할 수 없습니다.");return false;}data.submit();},done: function (e, data) {var code = data.textStatus;if(code == "success") {var filename = data.result.files[0].name;alert(filename + "성공적으로 업로드 되었습니다.");var user_id = $("#userIdHidden").val();var fullFilePath = "/uploads/" + user_id + "/" + data.result.files[0].name;var liItem = "<li><a href=\" + fullFilePath + \">" + filename + "</a></li>";$("#uploadFile' + getElementCounterOnly() +'").siblings("#fileListWrapper").children("#fileListul").append(liItem);$("<input>").attr({type: "text",class: "hiddenObject",id: "templateType",name: "templates[][attribute][filepath][]",value: filename}).appendTo($("#uploadFile' + getElementCounterOnly() +'").siblings("#fileListWrapper"));} else {alert("알 수 없는 문제로 오류가 발생했습니다");}},fail: function(){alert("서버와 통신 중 문제가 발생했습니다");}});});</scr'+'ipt><div id="fileListWrapper" class="form-group"><label class="control-label">파일 리스트</label><ul id="fileListul"></ul></div></div></div><div id="configButtonWrapper" class="text-right btn-group"><span><button class="btn btn-default" value="123123" onclick="addTemplate(this);return false;">추가하기</button><button class="btn btn-default" onclick="delTemplateItem(this);return false;">삭제하기</button></span></div></div>';
                 }
                 else if(type == 'map'){
                     html = '';
@@ -152,17 +160,64 @@ html
                                 #templateBodyWrapper
                                     #templateItem.form-group
                                         label.control-label 이름 입력하기
-                                        input.form-control.hidden#templateType(type='text', value='date', name='templates[][type]')
-                                        input.form-control#templateName(type='text', placeholder='템플릿 이름을 입력하세요', name='templates[][name]')
+                                        input.form-control.hidden#templateType(type="text", value="file", name="templates[][type]")
+                                        input.form-control#templateName(type="text", placeholder="템플릿 이름을 입력하세요", name="templates[][name]")
                                     #templateItem.form-group
                                         label.control-label 업로드 할 파일 선택
-                                        input.form-control.dateSelector(type='text', id='templateItemInputB', placeholder='End Date', name='templates[][attribute][enddate]', readonly="readonly")
+                                        input#uploadFile0.fontChange(type="file", name="templates[][attribute][fileInput]", accept="*")
+                                        p.help-block 20메가 제한이 있습니다.
+                                        script(type="text/javascript").
+                                            $(document).ready(function() {
+                                                $("#uploadFile0").fileupload({
+                                                    url : "/upload",
+                                                    dataType: "json",
+                                                    add: function(e, data){
+                                                        var uploadFile = data.files[0];
+                                                        if (uploadFile.size > 20000000) {
+                                                            alert("파일 용량은 20메가를 초과할 수 없습니다.");
+                                                            return false;
+                                                        }
+                                                        data.submit();
+                                                    },
+                                                    done: function (e, data) {
+                                                        var code = data.textStatus;
+                                                        if(code == "success") {
+                                                            var filename = data.result.files[0].name;
+                                                            alert(filename + "성공적으로 업로드 되었습니다.");
+                                                            var user_id = $("#userIdHidden").val();
+                                                            var fullFilePath = "/uploads/" + user_id + "/" + data.result.files[0].name;
+                                                            var liItem = "<li><a href=\"" + fullFilePath + "\">" + filename + "</a></li>";
+
+                                                            $("#uploadFile0").siblings("#fileListWrapper").children("#fileListul").append(liItem);
+
+                                                            $("<input>").attr({
+                                                                type: "text",
+                                                                class: "hiddenObject",
+                                                                id: "templateType",
+                                                                name: "templates[][attribute][filepath][]",
+                                                                value: filename
+                                                            }).appendTo($("#uploadFile0").siblings("#fileListWrapper"));
+                                                        } else {
+                                                            alert("알 수 없는 문제로 오류가 발생했습니다");
+                                                        }
+                                                    },
+                                                    fail: function(){
+                                                        alert("서버와 통신 중 문제가 발생했습니다");
+                                                    }
+                                                });
+                                            });
+
+                                        #fileListWrapper.form-group
+                                            label.control-label 파일 리스트
+                                            ul#fileListul
+
                                 #configButtonWrapper.text-right.btn-group
                                     span
                                         button.btn.btn-default(onclick="addTemplate(this);return false;" value="123123") 추가하기
                                         button.btn.btn-default(onclick="delTemplateItem(this);return false;") 삭제하기
                         #uploadCareer.text-center.fontChange
                             input#selectTemplateHidden.hiddenObject(type='text')
+                            input#userIdHidden.hiddenObject(type='text', value='#{user_id}')
                             input#templateCounter.hiddenObject(type='text', value='#{templateItems.length}')
                             button.btn.btn-primary.btn-lg(type="submit") 작성 완료
 
@@ -206,7 +261,7 @@ html
 
                                 .radio
                                     label
-                                        input#templateRadio(type="radio" value="picture" name="selectTemplate")
+                                        input#templateRadio(type="radio" value="image" name="selectTemplate")
                                         p.lead 사진을 올릴 수 있는 템플릿
                                         small 사진을 업로드 할 수 있는 다이얼로그, 미리보기(800x300)
 

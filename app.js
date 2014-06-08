@@ -66,6 +66,11 @@ upload.configure({
     }
 });
 
+//파일 이름에서 모든 공백 제거
+upload.on('begin', function (fileInfo) {
+    fileInfo.name = fileInfo.name.replace(/ /g,'');
+});
+
 ////////////////////////////////////////////////
 //Passport (Session) Configuration
 ////////////////////////////////////////////////
@@ -224,7 +229,7 @@ app.use('/upload', function(req, res, next){
             return __dirname + '/public/uploads/' + req.user._id;
         },
         uploadUrl: function(){
-            return '/uploads/';+ req.user._id;
+            return '/uploads/'+ req.user._id;
         }
     })(req, res, next);
 });

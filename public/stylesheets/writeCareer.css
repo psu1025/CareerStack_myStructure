@@ -273,3 +273,15 @@ a {
 .radio{
     padding-bottom: 20px;
 }
+
+#templateItem img{
+    max-width:800px;
+    width:auto;
+    max-height:300px;
+    height:auto;
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+#uploadCareer{
+    margin-bottom: 20px;
+}
