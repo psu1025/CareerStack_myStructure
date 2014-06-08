@@ -40,7 +40,6 @@ var templateSchema = mongoose.Schema({
 });
 
 var careerSchema = mongoose.Schema({
-    user_id:ObjectId,
     name: String,
     classify: String,
     type: String,
