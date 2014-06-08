@@ -304,7 +304,7 @@ app.get('/api/user/:user');
 app.put('/api/user/:user');
 
 //Career API
-app.post('/api/career');
+app.post('/api/career', ensureAuthenticatedBan, routes.postCareer);
 app.delete('/api/career/:career');
 app.put('/api/career/:career');
 app.get('/api/career/:career')

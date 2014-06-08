@@ -214,12 +214,6 @@ exports.logout = function(req, res){
 };
 
 
-exports.postCareer = function(req, res){
-    var result = 999;
-    var data = {};
-
-}
-
 exports.test = function(req, res){
     console.log(util.inspect(req.body.user));
     res.json({"good":"good"});
@@ -460,6 +454,21 @@ exports.getUserInfo = function(req, res){
             }
         });
 };
+
+
+exports.postCareer = function(req, res){
+    var result = 999;
+    var data = {};
+
+    console.log(util.inspect(req.body));
+    req.body.templates.forEach(function(item, idx){
+        var attribute = item.attribute || '';
+        console.log(util.inspect(attribute));
+    });
+
+    data.result = result;
+    res.json(data);
+}
 
 exports.changeUserConfig = function(req, res){
     var result = 999;
