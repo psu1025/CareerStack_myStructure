@@ -31,20 +31,20 @@ var fileSchema = mongoose.Schema({
 var templateSchema = mongoose.Schema({
     order:Number,
     name:String,
-    structure:MixedType,
 
-    size:{
-        height:Number,
-        width:Number
-    }
+    attribute: MixedType
+//    structure:MixedType,
+
+//    size:{
+//        height:Number,
+//        width:Number
+//    }
 });
 
 var careerSchema = mongoose.Schema({
     name: String,
-    classify: String,
-    type: String,
 
-    attribute: MixedType,
+    category: String,
 
     templateList: [templateSchema],
 
