@@ -31,14 +31,9 @@ var fileSchema = mongoose.Schema({
 var templateSchema = mongoose.Schema({
     order:Number,
     name:String,
+    type:String,
 
     attribute: MixedType
-//    structure:MixedType,
-
-//    size:{
-//        height:Number,
-//        width:Number
-//    }
 });
 
 var careerSchema = mongoose.Schema({

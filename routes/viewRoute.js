@@ -47,7 +47,6 @@ exports.viewMyPage = function(req, res){
                 else{
                     if(doc){
                         //categoryList를 가지고 render
-                        console.log(util.inspect(doc));
                         res.render(JADE_PATH+'mypage.jade', {
                             name:req.user.name,
                             categoryItems:doc.categoryList,
@@ -70,6 +69,54 @@ exports.viewJoin = function(req, res){
     res.render(JADE_PATH+'join.jade');
 };
 
+exports.viewCareerMain = function(req, res){
+    var user = req.user;
+    var career_id = req.params.career;
+    var category = req.params.category;
+
+    console.log(util.inspect(career_id));
+    console.log(util.inspect(category));
+
+    schema.scUser.findOne({_id:user._id})
+        .exec(
+        function(err, doc){
+            if(err){
+                console.log(err);
+                req.logout();
+                res.redirect('/view/main');
+                return;
+            }
+            else{
+                console.log(util.inspect(doc));
+
+                doc.categoryList.forEach(function(categoryItem, index){
+                    if(categoryItem.name == category){
+                        categoryItem.careerList.forEach(function(career, index){
+                            console.log(util.inspect(career));
+                            if(career._id == career_id){
+                                console.log(util.inspect(career));
+                                res.render(JADE_PATH + 'showCareer.jade',{
+                                    name:req.user.name,
+                                    categoryItems:doc.categoryList,
+                                    selectCategory:category,
+                                    introduceUrl:doc.introduceUrl,
+
+                                    user_id:req.user._id,
+                                    category:category,
+
+
+                                    careerName: career.name,
+                                    templateList:career.templateList
+                                });
+                            }
+                        });
+                    }
+                });
+            }
+        }
+    );
+}
+
 exports.viewCareerList = function(req, res){
     var user = req.user;
     schema.scUser.findOne({_id:user._id})
@@ -77,7 +124,6 @@ exports.viewCareerList = function(req, res){
         function(err, doc){
             if(err){
                 //에러가 난 경우 메인으로
-                result = 780;
                 req.logout();
                 res.redirect('/view/main');
                 return;
@@ -85,12 +131,19 @@ exports.viewCareerList = function(req, res){
             else{
                 if(doc){
                     //categoryList를 가지고 render
-                    console.log(util.inspect(req.params.category));
+
+                    var careerItems = null;
+                    doc.categoryList.forEach(function(categoryItem, index){
+                        if(categoryItem.name == req.params.category){
+                            careerItems = categoryItem.careerList;
+                        }
+                    });
+
                     res.render(JADE_PATH+'careerList.jade', {
                         name:req.user.name,
                         categoryItems:doc.categoryList,
                         selectCategory:req.params.category,
-                        careerItems:{"length":0},
+                        careerItems:careerItems,
                         introduceUrl:doc.introduceUrl
                     });
                 }
@@ -121,7 +174,6 @@ exports.selectTemplate = function(req, res){
             else{
                 if(doc){
                     //categoryList를 가지고 render
-                    console.log(util.inspect(req.params.category));
                     res.render(JADE_PATH+'selectTemplate.jade', {
                         name:req.user.name,
                         categoryItems:doc.categoryList,
@@ -157,7 +209,6 @@ exports.writeCareer = function(req, res){
             else{
                 if(doc){
                     //categoryList를 가지고 render
-                    console.log(util.inspect(req.params.category));
                     res.render(JADE_PATH+'writeCareer.jade', {
                         name:req.user.name,
                         categoryItems:doc.categoryList,

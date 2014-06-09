@@ -68,22 +68,27 @@ html
                     mixin careerItem(id, title, text, imageUrl)
                         #careerItem
                             #careerItemLeft
-                                #previewImage
-                                    - if(image == "")
-                                        img(src="/resource/images/careerList/default_thumbnail.png")
-                                    - else
-                                        img(src="#{imageUrl}")
+                                a(href='/view/career/show/#{selectCategory}/#{id}')
+                                    #previewImage
+                                        - if(imageUrl == "")
+                                            img.img-rounded(src="/resource/images/careerList/default_thumbnail.png")
+                                        - else
+                                            img.img-rounded(src="#{imageUrl}")
                             #careerItemRight
                                 #itemTitle
-                                    span.career_title #{title}
+                                    a(href='/view/career/show/#{selectCategory}/#{id}')
+                                        span.careerItemTitle #{title}
                                 #itemBody
-                                    #itemText
-                                        p #{text}
-                                    #itemConfig
-                                        #itemEdit
-                                            a(href="/view/career/edit/#{id}")
-                                                img(src="/resource/images/careerList/edit.png")
-                                        #itemDelete
+                                    a(href='/view/career/show/#{selectCategory}/#{id}')
+                                        #itemText.careerItemBodyText
+                                            p #{text}
+                                        #itemConfig
+                                            #itemEdit.right
+                                                a(href="/view/career/edit/#{id}")
+                                                    img(src="/resource/images/careerList/edit.png")
+                                            #itemDelete.right
+                                                a(href='/api/career/#{id}')
+                                                    img(src="/resource/images/careerList/delete.png")
 
                     //-Mixin Declation End
 
@@ -99,7 +104,10 @@ html
                             a(href="/view/career/selectTemplate")
                                 p.text-center 나의 포트폴리오 만들러 가기
                         - else
-                            p.text-center 아이템이 있지만 아직 만들지 아니하였습니다
+                            br
+                            each career in careerItems
+                                mixin careerItem(career._id, career.name, "테테테텍스트", "")
+                            //p.text-center 아이템이 있지만 아직 만들지 아니하였습니다
 
 
             #bottom.text-center

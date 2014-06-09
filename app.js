@@ -125,9 +125,6 @@ function findByEmail(email, callback){
 };
 
 function ensureAuthenticatedBan(req, res, next){
-    console.log(req.user);
-    console.log(req.cookies);
-    console.log(req.isAuthenticated());
     if(req.cookies.authcode && req.user &&
         (req.cookies.authcode === req.user.authcode) && req.isAuthenticated()){
         //인증이 되어있으면 통과
@@ -285,9 +282,6 @@ app.post('/api/login', function(req, res, next){
             var authcode = uuid.v1();
             schema.scUser.update({_id:user._id}, {auth_code:authcode}, function(err, docs){
                 res.cookie("authcode", authcode,  {maxAge: 1*60*60*1000});
-                console.log(req.user);
-                console.log(req.cookies);
-                console.log(req.isAuthenticated());
                 return res.json({"result":100, "model":user._id});
             });
 
@@ -338,8 +332,11 @@ app.get('/view/mypage', ensureAuthenticatedBan, view.viewMyPage);
 app.get('/view/join', ensureAuthenticatedRedirectionToMypage, view.viewJoin);
 app.get('/view/careerList/:category', ensureAuthenticatedBan, view.viewCareerList);
 
-app.get('/view/career/selectTemplate', ensureAuthenticatedBan, view.selectTemplate);
+app.get('/view/career/show/:category/:career', ensureAuthenticatedBan, view.viewCareerMain);
+
 app.get('/view/career/write/:template', ensureAuthenticatedBan, view.writeCareer);
+app.get('/view/career/selectTemplate', ensureAuthenticatedBan, view.selectTemplate);
+
 
 app.get('/view/setting', ensureAuthenticatedBan, view.setting);
 

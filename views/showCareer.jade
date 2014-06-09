@@ -1,0 +1,154 @@
+//
+   Created by Augustus on 14. 5. 0.
+doctype html
+html
+    head
+        meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+        title= title
+        link(rel='stylesheet', href='/stylesheets/showCareer.css')
+
+        script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+        script(src='/javascripts/bootstrap.min.js')
+        script(src='/javascripts/jquery-ui-1.10.4.custom.min.js')
+        link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+        link(rel='stylesheet', href='/stylesheets/bootstrap-theme.min.css')
+
+        script(type='text/javascript').
+            WebFontConfig = {
+            custom: {
+                families: ['Nanum Gothic'],
+                urls: ['http://fonts.googleapis.com/earlyaccess/nanumgothic.css']
+            }
+            };
+            (function() {
+                var wf = document.createElement('script');
+                wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                    '://ajax.googleapis.com/ajax/libs/webfont/1.4.10/webfont.js';
+                wf.type = 'text/javascript';
+                wf.async = 'true';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(wf, s);
+            })();
+    body
+        #wholeDiv
+            #top
+                #top_left
+                    a(href='/view/mypage')
+                        img(src='/resource/images/mypage/logo_small.png',id='toplogo')
+                #top_right
+                    span#welcomeText #{name}님, 환영합니다.
+                    a(href='/view/career/selectTemplate')
+                        img(src='/resource/images/mypage/write_career.png',id='write_career')
+                    a(href='/view/setting')
+                        img(src='/resource/images/mypage/config.png',id='config')
+                    a(href='/api/logout')
+                        img(src='/resource/images/mypage/logout.png',id='logout')
+            #introduce
+                #introduce_body.text-center
+                    img(src='#{introduceUrl}')
+                #introduce_fold.text-center
+                    img.text-center.fold_img(src='/resource/images/mypage/fold_up.png', id='fold_img')
+                    img.text-center.fold_img(src='/resource/images/mypage/fold_down.png', id='fold_img', style='display:none')
+                #introduce_bottom
+            #main
+                #main_left
+                    #menu_body
+                        - if(categoryItems.length)
+                            each item in categoryItems
+                                a(href='/view/careerList/#{item.name}')
+                                    - if(selectCategory == item.name)
+                                        #categoryItem.categorySelected.text-left
+                                            span #{item.name}
+                                    - else
+                                        #categoryItem.categoryUnselected.text-left
+                                            span #{item.name}
+                    #menu_edit
+                #main_right.fontChange
+                    //-Mixin Declation
+                    mixin memo(name, memo)
+                        #templateItem
+                            #templateItemTitle
+                                h3.fontChange #{name}
+                            #templateItemBody
+                                h4.fontChange #{memo}
+
+                    mixin text(name, text)
+                        #templateItem
+                            #templateItemTitle
+                                h3.fontChange #{name}
+                            #templateItemBody.
+                                #{text}
+
+                    mixin link(name, linkname, link)
+                        #templateItem
+                            #templateItemTitle
+                                h3.fontChange #{name}
+                            #templateItemBody
+                                h4.fontChange
+                                    a(href='#{link}') #{linkname}
+
+                    mixin date(name, date)
+                        #templateItem
+                            #templateItemTitle
+                                h3.fontChange #{name}
+                            #templateItemBody
+                                h4.fontChange #{date}
+
+                    mixin period(name, startdate, enddate)
+                        #templateItem
+                            #templateItemTitle
+                                h3.fontChange #{name}
+                            #templateItemBody
+                                h4.fontChange #{startdate} ~ #{enddate}
+
+                    mixin picture(name, picture, user_id)
+                        #templateItem
+                            #templateItemTitle
+                                h3.fontChange #{name}
+                            #templateItemBody
+                                img(src='/uploads/#{user_id}/#{picture}')
+
+                    mixin file(name, files, user_id)
+                        #templateItem
+                            #templateItemTitle
+                                h3.fontChange #{name}
+                            #templateItemBody
+                                - if(files.length)
+                                    each file in files
+                                        ul.fileListul
+                                            li
+                                                a(href='/uploads/#{user_id}/#{file}') #{file}
+
+                    //-Mixin Declation End
+
+                    #topMenu
+                        #categoryTitle.text-left
+                            span 포트폴리오 보기
+                    #porfolio_title.text-center
+                        h1.fontChange #{careerName}
+                    #templateItems
+                        - if(templateList.length)
+                            each template in templateList
+                                if template.type == 'memo'
+                                    mixin memo(template.name, template.attribute.memo)
+                                else if template.type == 'text'
+                                    mixin text(template.name, template.attribute.text)
+                                else if template.type == 'link'
+                                    mixin link(template.name, template.attribute.linkname, template.attribute.name)
+                                else if template.type == 'date'
+                                    mixin date(template.name, template.attribute.date)
+                                else if template.type == 'period'
+                                    mixin period(template.name, template.attribute.startdate, template.attribute.enddate)
+                                else if template.type == 'image'
+                                    mixin picture(template.name, template.attribute.filepath, user_id)
+                                else if template.type == 'file'
+                                    mixin file(template.name, template.attribute.filepath, user_id)
+
+
+
+            #bottom.text-center
+                span 개발자 - 박상욱, 디자이너 - 김광훈
+    script(type='text/javascript').
+        $('#introduce_fold').click(function(){
+            $('#introduce_body').slideToggle("slow", "easeOutQuint", function(){$('.fold_img').toggle();});
+        });
