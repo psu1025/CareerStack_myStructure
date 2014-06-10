@@ -293,28 +293,22 @@ app.get('/api/logout', routes.logout);
 
 //User API
 app.post('/api/user', routes.signUser);
-app.delete('/api/user/:user');
-app.get('/api/user/:user');
-app.put('/api/user/:user');
+app.delete('/api/user/:user', ensureAuthenticatedBan, routes.exitUser);
+//app.get('/api/user/:user');
+//app.put('/api/user/:user');
 
 //Career API
 app.post('/api/career', ensureAuthenticatedBan, routes.postCareer);
-app.delete('/api/career/:career');
-app.put('/api/career/:career');
-app.get('/api/career/:career')
+//app.delete('/api/career/:career');//, ensureAuthenticatedBan, routes.delCareer);
+app.put('/api/career/:career', ensureAuthenticatedBan, routes.modificationCareer);
+
 app.get('/api/list/career/:user');
-
-//Template API
-app.get('/api/template/:template');     //정해진 Template 양식 받기
-
-app.post('/api/template');
-app.delete('/api/template/:template');
-app.put('/api/template/:template');
 
 //Config API
 app.post('/api/config/submit', ensureAuthenticatedBan, routes.changeUserConfig);
 
 //Upload API
+// /upload로 위에 구현되어 있음
 
 //Test API
 app.post('/test', routes.test);
@@ -336,12 +330,12 @@ app.get('/view/career/show/:category/:career', ensureAuthenticatedBan, view.view
 
 app.get('/view/career/write/:template', ensureAuthenticatedBan, view.writeCareer);
 app.get('/view/career/selectTemplate', ensureAuthenticatedBan, view.selectTemplate);
-
+app.get('/view/career/edit/:career', ensureAuthenticatedBan, view.editCareer);
+app.get('/view/career/del/:career', ensureAuthenticatedBan, view.delCareer);
 
 app.get('/view/setting', ensureAuthenticatedBan, view.setting);
 
-app.get('/view/career/edit/:career');
-app.post('/view/career/edit/:career');
+
 
 app.get('/view/maptest', view.mapTest);
 app.get('/view/testjade', view.testJade);

@@ -5,7 +5,7 @@ html
     head
         meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
         title= title
-        link(rel='stylesheet', href='/stylesheets/writeCareer.css')
+        link(rel='stylesheet', href='/stylesheets/editCareer.css')
         script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
         script(src='/javascripts/jquery.serialize-object.min.js')
         script(src='/javascripts/bootstrap.min.js')
@@ -157,33 +157,37 @@ html
                     form#careerWriteForm(role="form")
                         #topMenu
                             #categoryTitle.text-left
-                                span 포트폴리오 작성하기
+                                span 포트폴리오 수정하기
                             #selectCategory.form-group
                                 label(for="categorySelect") 카테고리 선택
                                 select.form-control#categorySelect(name="category")
                                     each item in categoryItems
-                                        option(value="#{item.name}") #{item.name}
+                                        if item.name == writeTemplates.category
+                                            option(value="#{item.name}", selected="selected") #{item.name}
+                                        else
+                                            option(value="#{item.name}") #{item.name}
+
                             #careerName.form-group
                                 label(for="careerTitle") 포트폴리오 이름
-                                input.form-control#careerTitle(type="text", name="portfolioName")
+                                input.form-control#careerTitle(type="text", name="portfolioName", value="#{writeTemplates.name}")
                         #templates
                             - var addrIndex = 0
-                            each template, index in writeTemplates
+                            each template, index in writeTemplates.templateList
                                 if(template.type == 'memo')
-                                    mixin memoEdit(addrIndex, template.name, "")
+                                    mixin memoEdit(addrIndex, template.name, template.attribute.memo)
                                 else if(template.type == 'text')
-                                    mixin textEdit(addrIndex, template.name, "")
+                                    mixin textEdit(addrIndex, template.name, template.attribute.text)
                                 else if(template.type == 'link')
-                                    mixin linkEdit(addrIndex, template.name, "", "")
+                                    mixin linkEdit(addrIndex, template.name, template.attribute.linkname, template.attribute.link)
                                 else if(template.type == 'date')
-                                    mixin dateEdit(addrIndex, template.name, "")
+                                    mixin dateEdit(addrIndex, template.name, template.attribute.date)
                                 else if(template.type == 'period')
-                                    mixin periodEdit(addrIndex, template.name, addrIndex+1, "", "")
+                                    mixin periodEdit(addrIndex, template.name, addrIndex+1, template.attribute.startdate, template.attribute.enddate)
                                     - addrIndex +=1
                                 else if(template.type == 'image')
-                                    mixin imageEdit(addrIndex, template.name, user_id, "")
+                                    mixin imageEdit(addrIndex, template.name, user_id, template.attribute.filepath)
                                 else if(template.type == 'file')
-                                    mixin fileEdit(addrIndex, template.name, user_id, "")
+                                    mixin fileEdit(addrIndex, template.name, user_id, template.attribute.filepath)
 
                                 - addrIndex += 1
 
@@ -191,8 +195,9 @@ html
                         #uploadCareer.text-center.fontChange
                             input#selectTemplateHidden.hiddenObject(type='text')
                             input#userIdHidden.hiddenObject(type='text', value='#{user_id}')
-                            input#templateCounter.hiddenObject(type='text', value='#{writeTemplates.length}')
-                            button.btn.btn-primary.btn-lg(type="submit") 작성 완료
+                            input#careerIdHidden.hiddenObject(type='text', value='#{career_id}')
+                            input#templateCounter.hiddenObject(type='text', value='#{writeTemplates.templateList.length}')
+                            button.btn.btn-primary.btn-lg(type="submit") 수정 완료
 
 
                 #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
@@ -294,7 +299,7 @@ html
     script(type='text/javascript').
         $(document).ready(function() {
             $("#careerWriteForm").submit(function() { // intercepts the submit event
-                var answer = confirm('작성하시겠습니까?');
+                var answer = confirm('수정하시겠습니까?');
                 if(!answer){
                     return false;
                 }
@@ -305,27 +310,27 @@ html
                 });
 
                 $.ajax({ // make an AJAX request
-                    type: "POST",
-                    url: "/api/career", // it's the URL of your component B
+                    type: "PUT",
+                    url: "/api/career/" + $('#careerIdHidden').val(), // it's the URL of your component B
                     data: $("#careerWriteForm").serializeObject(), // serializes the form's elements
                     success: function(data)
                     {
-                        if(data.result == 300){
+                        if(data.result == 310){
                             alert('성공적으로 등록되었습니다')
 
                             //카테고리 메인으로 이동
                             window.location="/view/careerList/" + $('#categorySelect').val();
                         }
-                        else if(data.result == 301){
+                        else if(data.result == 311){
                             alert('이미지 형식이 맞지 않습니다');
                         }
-                        else if(data.result == 302){
+                        else if(data.result == 312){
                             alert('항목이 모두 채워지지 않았습니다\n사용하지 않는 항목은 삭제해 주십시오');
                         }
-                        else if(data.result == 303){
+                        else if(data.result == 313){
                             alert('등록 에러가 발생했습니다. 다시 시도해 주세요\nCode:' + data.result);
                         }
-                        else if(data.result == 304){
+                        else if(data.result == 314){
                             alert('템플릿이 하나도 없습니다. 다시 작성해 주세요');
                         }
                         else {

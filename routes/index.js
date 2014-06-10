@@ -482,9 +482,6 @@ exports.postCareer = function(req, res){
 
     var careerData = req.body;
 
-    console.log('req body');
-    console.log(util.inspect(req.body));
-
     //포트폴리오 이름이 있나 체크한다
     if(careerData.portfolioName == ''){
         result = 302;
@@ -512,7 +509,7 @@ exports.postCareer = function(req, res){
     schema.scUser.findOne({_id:req.user._id})
     .exec(function(err, doc){
         if(err){
-            result = 503;
+            result = 303;
             data.result = result;
             res.json(data);
         }
@@ -555,7 +552,105 @@ exports.postCareer = function(req, res){
             return;
         }
     });
-}
+};
+
+exports.modificationCareer = function(req, res){
+    var result = 999;
+    var data = {};
+
+    var careerData = req.body;
+    var career_id = req.params.career;
+
+    console.log('req body');
+    console.log(util.inspect(req.body));
+
+    //포트폴리오 이름이 있나 체크한다
+    if(careerData.portfolioName == ''){
+        result = 312;
+        data.result = result;
+        res.json(data);
+        return;
+    }
+
+    //템플릿이 하나도 없을 때 304
+    if(typeof careerData.templates == "undefined"){
+        result = 314;
+        data.result = result;
+        res.json(data);
+        return;
+    }
+
+    //항목이 모두 채워져있나 체크해 비어있으면 302
+    if(!(careerData.templates.every(careerObjectEmptyCheck))){
+        result = 312;
+        data.result = result;
+        res.json(data);
+        return;
+    }
+
+    schema.scUser.findOne({_id:req.user._id})
+        .exec(function(err, doc){
+            if(err){
+                result = 313;
+                data.result = result;
+                res.json(data);
+            }
+            else{
+                var successFlag = false;
+
+                //기존 삭제
+                doc.categoryList.forEach(function(category, index){
+                    category.careerList.forEach(function(careerItem, index){
+                        if(careerItem._id == career_id){
+                            category.careerList.splice(index, 1);
+                            //doc.save();
+                        }
+                    });
+                });
+
+                doc.categoryList.forEach(function(category, index){
+                    if(category.name == careerData.category){
+                        //새로 등록
+                        var templateList = [];
+                        careerData.templates.forEach(function(templateItem, index){
+
+                            if(templateItem.type == 'file'){
+                                console.log(util.inspect(templateItem.attribute));
+                            }
+
+                            templateList.push(new schema.scTemplete({
+                                order:index,
+                                name:templateItem.name,
+                                type:templateItem.type,
+                                attribute:templateItem.attribute
+                            }));
+                        });
+
+                        var newPortfolio = new schema.scCareer({
+                            name: careerData.portfolioName,
+                            category: careerData.category,
+                            templateList:templateList
+                        });
+
+                        category.careerList.push(newPortfolio);
+                        doc.save();
+                        successFlag = true;
+                    }
+                });
+
+                //결과 처리
+                if(successFlag == true){
+                    result = 310;
+                }
+                else{
+                    result = 313;
+                }
+                data.result = result;
+                res.json(data);
+                return;
+            }
+        });
+};
 
 exports.changeUserConfig = function(req, res){
     var result = 999;

@@ -1,0 +1,158 @@
+//
+   Created by Augustus on 14. 6. 11.
+
+mixin memoEdit(index, name, memo)
+    #templateWrapper.fontChange
+        #templateBodyWrapper
+            #templateItem.form-group
+                label.control-label 이름 입력하기
+                input#templateType.form-control.hidden(type='text', name='templates[#{index}][type]', value='memo')
+                input#templateName.form-control(type='text', name='templates[#{index}][name]', placeholder='템플릿 이름을 입력하세요', value="#{name}")
+            #templateItem.form-group
+                label.control-label 자유 내용 입력
+                input.form-control(id='templateItemInput#{index}', type='text', name='templates[#{index}][attribute][memo]', placeholder='자유 내용 입력', value="#{memo}")
+            #configButtonWrapper.text-right.btn-group
+                span
+                    button.btn.btn-default(value='123123', onclick='addTemplate(this);return false;') 추가하기
+                    button.btn.btn-default(onclick='delTemplateItem(this);return false;') 삭제하기
+
+
+
+mixin textEdit(index, name, text)
+    #templateWrapper.fontChange
+        #templateBodyWrapper
+            #templateItem.form-group
+                label.control-label 이름 입력하기
+                input#templateType.form-control.hidden(type='text', name='templates[#{index}][type]', value='text')
+                input#templateName.form-control(type='text', name='templates[#{index}][name]', placeholder='템플릿 이름을 입력하세요', value="#{name}")
+            #templateItem.form-group
+                label.control-label 자유 내용 입력
+                textarea.form-control.textAreaWithTextEditor(id='templateItemInput#{index}', name='templates[#{index}][attribute][text]', rows='10') #{text}
+            #configButtonWrapper.text-right.btn-group
+                span
+                    button.btn.btn-default(value='123123', onclick='addTemplate(this);return false;') 추가하기
+                    button.btn.btn-default(onclick='delTemplateItem(this);return false;') 삭제하기
+
+
+mixin linkEdit(index, name, linkname, link)
+    #templateWrapper.fontChange
+        #templateBodyWrapper
+            #templateItem.form-group
+                label.control-label 이름 입력하기
+                input#templateType.form-control.hidden(type='text', name='templates[#{index}][type]', value='link')
+                input#templateName.form-control(type='text', placeholder='템플릿 이름을 입력하세요', name='templates[#{index}][name]', value="#{name}")
+            #templateItem.form-group
+                label.control-label 링크 이름 입력
+                input.form-control(id='templateItemInput#{index}', type='text', placeholder='링크 이름 입력', name='templates[#{index}][attribute][linkname]', value="#{linkname}")
+            #templateItem.form-group
+                label.control-label 링크 주소 입력
+                input.form-control(id='templateItemInput#{index}', type='text', placeholder='링크 주소 입력', name='templates[#{index}][attribute][link]', value="#{link}")
+            #configButtonWrapper.text-right.btn-group
+                span
+                    button.btn.btn-default(onclick='addTemplate(this);return false;', value='123123') 추가하기
+                    button.btn.btn-default(onclick='delTemplateItem(this);return false;') 삭제하기
+
+
+mixin dateEdit(index, name, date)
+    #templateWrapper.fontChange
+        #templateBodyWrapper
+            #templateItem.form-group
+                label.control-label 이름 입력하기
+                input#templateType.form-control.hidden(type='text', name='templates[#{index}][type]', value='date')
+                input#templateName.form-control(type='text', name='templates[#{index}][name]', placeholder='템플릿 이름을 입력하세요', value="#{name}")
+            #templateItem.form-group
+                label.control-label 날짜 입력
+                input.form-control.dateSelector(id='templateItemInput#{index}', type='text', readonly='readonly', name='templates[#{index}][attribute][date]', placeholder='Date', value="#{date}")
+            #configButtonWrapper.text-right.btn-group
+                span
+                    button.btn.btn-default(onclick='addTemplate(this);return false;', value='123123') 추가하기
+                    button.btn.btn-default(onclick='delTemplateItem(this);return false;') 삭제하기
+
+
+mixin periodEdit(index, name, nextindex, startdate, enddate)
+    #templateWrapper.fontChange
+        #templateBodyWrapper
+            #templateItem.form-group
+                label.control-label 이름 입력하기
+                input#templateType.form-control.hidden(type='text', name='templates[#{index}][type]', value='period')
+                input#templateName.form-control(type='text', name='templates[#{index}][name]', placeholder='템플릿 이름을 입력하세요', value="#{name}")
+            #templateItem.form-group
+                label.control-label 시작 날짜 입력
+                input.form-control.dateSelector(id='templateItemInput#{index}', type='text', readonly='readonly', name='templates[#{index}][attribute][startdate]', placeholder='Start Date', value="#{startdate}")
+            #templateItem.form-group
+                label.control-label 끝 날짜 입력
+                input.form-control.dateSelector(id='templateItemInput#{nextindex}', type='text', readonly='readonly', name='templates[#{index}][attribute][enddate]', placeholder='End Date', value="#{enddate}")
+            #configButtonWrapper.text-right.btn-group
+                span
+                    button.btn.btn-default(value='123123', onclick='addTemplate(this);return false;') 추가하기
+                    button.btn.btn-default(onclick='delTemplateItem(this);return false;') 삭제하기
+
+
+mixin imageEdit(index, name, user_id, image)
+    #templateWrapper.fontChange
+        #templateBodyWrapper
+            #templateItem.form-group
+                label.control-label 이름 입력하기
+                input#templateType.form-control.hidden(type='text', name='templates[#{index}][type]', value='image')
+                input#templateName.form-control(type='text', name='templates[#{index}][name]', placeholder='템플릿 이름을 입력하세요', value="#{name}")
+            #templateItem.form-group
+                label.control-label 업로드 할 이미지 선택
+                input#filePath.hiddenObject(type='text', name='templates[#{index}][attribute][filepath]', value="#{image}")
+                input.fontChange(id='uploadImage#{index}', type='file', accept='image/*', name='templates[#{index}][attribute][fileInput]')
+                p.help-block png, jpg, gif만 업로드 하세요. 5메가 제한이 있습니다. 800x300 pixel 크기 제한이 걸립니다
+                script(type='text/javascript').
+                    $(document).ready(function() {$("#uploadImage#{index}").fileupload({url : "/upload",dataType: "json",add: function(e, data){var uploadFile = data.files[0];if (!(/png|jpe?g|gif/i).test(uploadFile.name)) {alert("png, jpg, gif 만 가능합니다");goUpload = false;return false;} else if (uploadFile.size > 5000000) { alert("파일 용량은 5메가를 초과할 수 없습니다.");return false;}data.submit();},done: function (e, data) {var code = data.textStatus;if(code == "success") {$("#uploadImage#{index}").siblings("#filePath").val(data.result.files[0].name);var user_id = $("#userIdHidden").val();var fullFilePath = "/uploads/" + user_id + "/" + data.result.files[0].name;$("#uploadImage#{index}").siblings("#imagePreviewWrapper").children("#imgPreview").attr("src", fullFilePath);} else {alert("알 수 없는 문제로 오류가 발생했습니다");}},fail: function(){alert("서버와 통신 중 문제가 발생했습니다");}});});
+                #imagePreviewWrapper.form-group
+                    label.control-label 이미지 프리뷰
+                    if image == ""
+                        img#imgPreview
+                    else
+                        img#imgPreview(src="/uploads/#{user_id}/#{image}")
+            #configButtonWrapper.text-right.btn-group
+                span
+                    button.btn.btn-default(value='123123', onclick='addTemplate(this);return false;') 추가하기
+                    button.btn.btn-default(onclick='delTemplateItem(this);return false;') 삭제하기
+
+
+mixin fileEdit(index, name, user_id, filelist)
+    #templateWrapper.fontChange
+        #templateBodyWrapper
+            #templateItem.form-group
+                label.control-label 이름 입력하기
+                input#templateType.form-control.hidden(type='text', name='templates[#{index}][type]', value='file')
+                input#templateName.form-control(type='text', name='templates[#{index}][name]', placeholder='템플릿 이름을 입력하세요', value="#{name}")
+            #templateItem.form-group
+                label.control-label 업로드 할 파일 선택
+                input.fontChange(id='uploadFile#{index}', type='file', accept='*', name='templates[#{index}][attribute][fileInput]')
+
+                p.help-block 20메가 제한이 있습니다.
+                script(type='text/javascript').
+                    $(document).ready(function() {$("#uploadFile#{index}").fileupload({url : "/upload",dataType: "json",add: function(e, data){var uploadFile = data.files[0];if (uploadFile.size > 20000000) {alert("파일 용량은 20메가를 초과할 수 없습니다.");return false;}data.submit();},done: function (e, data) {var code = data.textStatus;if(code == "success") {var filename = data.result.files[0].name;alert(filename + "성공적으로 업로드 되었습니다.");var user_id = $("#userIdHidden").val();var fullFilePath = "/uploads/" + user_id + "/" + data.result.files[0].name;var liItem = "<li><a href=" + fullFilePath + ">" + filename + "</a></li>";$("#uploadFile#{index}").siblings("#fileListWrapper").children("#fileListul").append(liItem);$("<input>").attr({type: "text",class: "hiddenObject",id: "templateType",name: "templates[#{index}][attribute][filepath][]",value: filename}).appendTo($("#uploadFile#{index}").siblings("#fileListWrapper"));} else {alert("알 수 없는 문제로 오류가 발생했습니다");}},fail: function(){alert("서버와 통신 중 문제가 발생했습니다");}});});
+                #fileListWrapper.form-group
+                    label.control-label 파일 리스트
+                    ul#fileListul
+                        unless filelist.length == 0
+                            each file in filelist
+                                li
+                                    a(href="/uploads/#{user_id}/#{file}") #{file}
+                    unless filelist.length == 0
+                        each file in filelist
+                            input.hiddenObject#templateType(type='text', name='templates[#{index}][attribute][filepath][]', value='#{file}')
+
+            #configButtonWrapper.text-right.btn-group
+                span
+                    button.btn.btn-default(value='123123', onclick='addTemplate(this);return false;') 추가하기
+                    button.btn.btn-default(onclick='delTemplateItem(this);return false;') 삭제하기
+
+
+mixin noneEdit(index, name)
+    #templateWrapper.fontChange
+        #templateBodyWrapper
+            #templateItem.form-group
+                label.control-label 이름 입력하기
+                input#templateType.form-control.hidden(type='text', name='templates[#{index}][type]', value='none')
+                input#templateName.form-control(type='text', name='templates[#{index}][name]', placeholder='템플릿 이름을 입력하세요', value="#{name}")
+            #configButtonWrapper.text-right.btn-group
+                span
+                    button.btn.btn-default(value='123123', onclick='addTemplate(this);return false;') 추가하기
+                    button.btn.btn-default(onclick='delTemplateItem(this);return false;') 삭제하기

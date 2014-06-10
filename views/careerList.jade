@@ -29,6 +29,14 @@ html
                 var s = document.getElementsByTagName('script')[0];
                 s.parentNode.insertBefore(wf, s);
             })();
+        script(type='text/javascript').
+            function delCareer(delUrl){
+                var result = confirm('정말 삭제하시겠습니까?');
+                if(result == true)
+                    window.location.replace(delUrl);
+                else
+                    return false;
+            }
     body
         #wholeDiv
             #top
@@ -87,8 +95,8 @@ html
                                                 a(href="/view/career/edit/#{id}")
                                                     img(src="/resource/images/careerList/edit.png")
                                             #itemDelete.right
-                                                a(href='/api/career/#{id}')
-                                                    img(src="/resource/images/careerList/delete.png")
+                                                //a(href='/api/career/#{id}')
+                                                img(src="/resource/images/careerList/delete.png", onclick="javascript:delCareer('/view/career/del/#{id}');return false;")
 
                     //-Mixin Declation End
 

@@ -77,7 +77,7 @@ html
                             #templateItemTitle
                                 h3.fontChange #{name}
                             #templateItemBody.
-                                #{text}
+                                !{text}
 
                     mixin link(name, linkname, link)
                         #templateItem
@@ -134,7 +134,7 @@ html
                                 else if template.type == 'text'
                                     mixin text(template.name, template.attribute.text)
                                 else if template.type == 'link'
-                                    mixin link(template.name, template.attribute.linkname, template.attribute.name)
+                                    mixin link(template.name, template.attribute.linkname, template.attribute.link)
                                 else if template.type == 'date'
                                     mixin date(template.name, template.attribute.date)
                                 else if template.type == 'period'
