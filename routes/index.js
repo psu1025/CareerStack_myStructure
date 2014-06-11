@@ -463,6 +463,13 @@ var careerObjectEmptyCheck = function(value, index, ar){
     if(value.name == ''){
         checkVar = false;
     }
+    else if(value.type == 'file'){
+        console.log(util.inspect(value));
+        console.log(typeof value.attribute);
+        if(typeof value.attribute === "undefined"){
+            checkVar = false;
+        }
+    }
     else{
         for (var key in value.attribute){
             if(value.attribute[key] == ''){
@@ -472,6 +479,7 @@ var careerObjectEmptyCheck = function(value, index, ar){
         }
     }
 
+    console.log(checkVar);
     return checkVar;
 }
 

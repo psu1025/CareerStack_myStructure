@@ -167,6 +167,21 @@ html
                                 label(for="careerTitle") 포트폴리오 이름
                                 input.form-control#careerTitle(type="text", name="portfolioName")
                         #templates
+                            #templateWrapper.fontChange
+                                #templateBodyWrapper
+                                    #templateItem.form-group
+                                        label.control-label 이름 입력하기
+                                        input#templateType.form-control.hidden(type='text', name='templates[][type]', value='map')
+                                        input#templateName.form-control(type='text', name='templates[][name]', placeholder='템플릿 이름을 입력하세요')
+                                    #templateItem.form-group
+                                        label.control-label 지도 검색하기
+                                        input#templateNametemplateItemInput.form-control(type='text', name='templates[][attribute][memo]', placeholder='자유 내용 입력')
+                                    #configButtonWrapper.text-right.btn-group
+                                        span
+                                            button.btn.btn-default(value='123123', onclick='addTemplate(this);return false;') 추가하기
+                                            button.btn.btn-default(onclick='delTemplateItem(this);return false;') 삭제하기
+
+
                             - var addrIndex = 0
                             each template, index in writeTemplates
                                 if(template.type == 'memo')
