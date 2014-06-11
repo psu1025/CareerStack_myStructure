@@ -157,6 +157,7 @@ a {
     color:#e6e6e6;
     background-image:url("../resource/images/mypage/list_fold.png");
     background-repeat: no-repeat;
+    text-overflow: ellipsis;
 }
 
 #menuItemMiddle{
