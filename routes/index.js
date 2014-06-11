@@ -48,7 +48,7 @@ var optionsServer = {
     pass: 'dnlwkem@1'
 };
 
-mongoose.connect('mongodb://54.178.136.239:27017/test', optionsServer);   //Server Connect
+mongoose.connect('mongodb://54.178.136.239:27017/CareerStack', optionsServer);   //Server Connect
 //mongoose.connect('mongodb://localhost:27017/test', optionsServer);             //Local Connect
 var dbConnection = mongoose.connection;
 dbConnection.on('error', console.error.bind(console, 'db connection error'));
