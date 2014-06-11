@@ -253,7 +253,6 @@ a:hover{
 #itemText{
     padding-left: 20px;
     padding-top:10px;
-    text-overflow: ellipsis;
 }
 
 #careerItem a{

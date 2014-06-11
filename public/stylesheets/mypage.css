@@ -182,4 +182,6 @@ a {
     margin: 0 0 0 0px;
     padding: 0 0 0 15px;
     text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
