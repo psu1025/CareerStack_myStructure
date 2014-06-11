@@ -89,7 +89,10 @@ html
                                 #itemBody
                                     a(href='/view/career/show/#{selectCategory}/#{id}')
                                         #itemText.careerItemBodyText
-                                            p #{text}
+                                            - if (text == "")
+                                                p 메모 혹은 자유기술 항목이 없습니다
+                                            - else
+                                                p #{text}
                                         #itemConfig
                                             #itemEdit.right
                                                 a(href="/view/career/edit/#{id}")
@@ -104,6 +107,7 @@ html
                         #categoryTitle.text-left
                             span #{selectCategory}
                     #careerItems
+                        - var regex = /(<([^>]+)>)/ig
                         - if(careerItems.length == 0)
                             br
                             br
@@ -114,7 +118,17 @@ html
                         - else
                             br
                             each career in careerItems
-                                mixin careerItem(career._id, career.name, "테테테텍스트", "")
+                                - var imageUrl = ""
+                                - var text = ""
+                                each template in career.templateList
+                                    if template.type == 'image'
+                                        - imageUrl = '/uploads/' + user_id + '/' + template.attribute.filepath
+                                    else if template.type == 'memo'
+                                        - text = template.attribute.memo
+                                    else if template.type == 'text'
+                                        - text = template.attribute.text
+                                        - text = text.replace(regex, "")
+                                mixin careerItem(career._id, career.name, text, imageUrl)
                             //p.text-center 아이템이 있지만 아직 만들지 아니하였습니다
 
 

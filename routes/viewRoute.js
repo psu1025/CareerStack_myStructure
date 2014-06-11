@@ -148,11 +148,12 @@ exports.viewCareerList = function(req, res){
                     });
 
                     res.render(JADE_PATH+'careerList.jade', {
-                        name:req.user.name,
-                        categoryItems:doc.categoryList,
-                        selectCategory:req.params.category,
-                        careerItems:careerItems,
-                        introduceUrl:doc.introduceUrl
+                        user_id: user._id,
+                        name: user.name,
+                        categoryItems: doc.categoryList,
+                        selectCategory: req.params.category,
+                        careerItems: careerItems,
+                        introduceUrl: doc.introduceUrl
                     });
                 }
                 else{

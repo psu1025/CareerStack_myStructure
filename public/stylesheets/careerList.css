@@ -258,3 +258,8 @@ a:hover{
 #careerItem a{
     text-decoration: none;
 }
+
+#previewImage img{
+    height: 120px;
+    width:120px;
+}
