@@ -157,7 +157,6 @@ a {
     color:#e6e6e6;
     background-image:url("../resource/images/mypage/list_fold.png");
     background-repeat: no-repeat;
-    text-overflow: ellipsis;
 }
 
 #menuItemMiddle{
@@ -182,4 +181,5 @@ a {
     font-size: 15px;
     margin: 0 0 0 0px;
     padding: 0 0 0 15px;
+    text-overflow: ellipsis;
 }
