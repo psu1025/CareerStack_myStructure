@@ -99,6 +99,12 @@ html
                             else if(data.result == 201){
                                 alert('이미 이 이메일로 가입된 유저가 있습니다');
                             }
+                            else if(data.result == 202){
+                                alert('로그인 상태에서는 가입할 수 없습니다');
+                            }
+                            else if(data.result == 203){
+                                alert('비밀번호 재입력이 동일하지 않습니다');
+                            }
                             else{
                                 alert('알 수 없는 오류. 다시 시도해 주세요');
                             }

@@ -48,7 +48,7 @@ var optionsServer = {
     pass: 'dnlwkem@1'
 };
 
-mongoose.connect('mongodb://54.178.136.239:27017/test', optionsServer);   //Server Connect
+mongoose.connect('mongodb://54.178.136.239:27017/CareerStack', optionsServer);   //Server Connect
 //mongoose.connect('mongodb://localhost:27017/test', optionsServer);             //Local Connect
 var dbConnection = mongoose.connection;
 dbConnection.on('error', console.error.bind(console, 'db connection error'));
@@ -241,9 +241,17 @@ exports.signUser = function(req, res){
 
     //필수입력정보들 parsing
     var userPwd = bodyData.password;
+    var userRePwd = bodyData.repassword;
     var userEmail = bodyData.email;
     var userName = bodyData.name;
     var userBirth = bodyData.birth;
+
+    if(userPwd != userRePwd){
+        result = 203;
+        data.result = result;
+        res.json(data);
+        return;
+    }
 
     //이미 이 이메일로 가입된 유저가 있는지 확인
     schema.scUser.where('email').equals(userEmail).exec(function(err, docs){
