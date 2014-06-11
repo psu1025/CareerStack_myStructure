@@ -122,7 +122,7 @@ html
                                 - var text = ""
                                 each template in career.templateList
                                     if template.type == 'image'
-                                        - imageUrl = '/uploads/' + user_id + '/' + template.attribute.filepath
+                                        - imageUrl = '/uploads/' + user_id + '/thumbnail/' + template.attribute.filepath
                                     else if template.type == 'memo'
                                         - text = template.attribute.memo
                                     else if template.type == 'text'

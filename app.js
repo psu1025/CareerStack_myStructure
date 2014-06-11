@@ -204,9 +204,9 @@ app.use(allowCrossDomain);
 
 // 로그
 // 포맷 (접속 IP - 처리 결과 [날짜(GMT)] 응답시간 요청크기 메소드 접근url 유저정보)
-//app.use(express.logger({
-//    format: ':remote-addr - :status [:date] :response-time ms :res[content-length] " :method :url " ":user-agent"'
-//}));
+app.use(express.logger({
+    format: ':remote-addr - :status [:date] :response-time ms :res[content-length] " :method :url " ":user-agent"'
+}));
 //압축
 app.use(express.compress());              //리퀘스트 압축
 
@@ -340,38 +340,6 @@ app.get('/view/setting', ensureAuthenticatedBan, view.setting);
 app.get('/view/maptest', view.mapTest);
 app.get('/view/testjade', view.testJade);
 
-
-
-////User API
-//app.post('/user', ensureAuthenticatedBranch, routes.signUser);
-//app.get('/user/:user', ensureAuthenticatedBranch, routes.getUserInfo);
-//app.put('/user/:user', ensureAuthenticatedBan, routes.editUserInfo);
-//app.del('/user/:user', ensureAuthenticatedBan, routes.exitUser);
-//
-////Activity API
-//app.post('/activity', ensureAuthenticatedBan, routes.addActivity);
-//app.get('/activity/list/:user', ensureAuthenticatedBranch, routes.getUserListActivity);
-//app.get('/activity/:act', ensureAuthenticatedBranch, routes.getActivity);
-//app.put('/activity/:act', ensureAuthenticatedBan, routes.editActivity);
-//app.del('/activity/:act', ensureAuthenticatedBan, routes.delActivity);
-//
-////Resume API
-//app.post('/resume', ensureAuthenticatedBan, routes.addResume);
-//app.get('/resume/list/:user', ensureAuthenticatedBranch, routes.getUserListResume);
-//app.get('/resume/:res', ensureAuthenticatedBranch, routes.getResume);
-//app.put('/resume/:res', ensureAuthenticatedBan, routes.editResume);
-//app.del('/resume/:res', ensureAuthenticatedBan, routes.delResume);
-//
-////Event API
-//app.post('/event', ensureAuthenticatedBan, routes.addEvent);
-//app.get('/event/list/:user', ensureAuthenticatedBranch, routes.getUserListEvent);
-//app.get('/event/:event', ensureAuthenticatedBranch, routes.getEvent);
-//app.put('/event/:event', ensureAuthenticatedBan, routes.editEvent);
-//app.del('/event/:event', ensureAuthenticatedBan, routes.delEvent);
-//
-//
-////get Template API
-//app.get('/template/activity/:text', routes.getActivityTemplate);
 
 /////////////////////////////////////
 ////////////////////////////////////////////////
