@@ -285,8 +285,15 @@ html
             }
             else{
                 checkedTemplate = $(':radio[name="selectTemplate"]:checked').val();
-                $('#selectTemplateHidden').val(checkedTemplate);
-                $('#myModal').modal('hide')
+
+                if(checkedTemplate == "map"){
+                    alert('죄송합니다 지도는 구현중입니다 ㅠㅠ');
+                    event.preventDefault();
+                }
+                else{
+                    $('#selectTemplateHidden').val(checkedTemplate);
+                    $('#myModal').modal('hide')
+                }
             }
         });
 
