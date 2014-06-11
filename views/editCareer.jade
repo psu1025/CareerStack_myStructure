@@ -168,7 +168,7 @@ html
                                             option(value="#{item.name}") #{item.name}
 
                             #careerName.form-group
-                                label(for="careerTitle") 포트폴리오 이름
+                                label(for="careerTitle") 포트폴리오 제목
                                 input.form-control#careerTitle(type="text", name="portfolioName", value="#{writeTemplates.name}")
                         #templates
                             - var addrIndex = 0
@@ -249,11 +249,11 @@ html
                                         p.lead 파일을 올릴 수 있는 템플릿
                                         small 파일을 업로드 할 수 있는 다이얼로그
 
-                                .radio
-                                    label
-                                        input#templateRadio(type="radio" value="map" name="selectTemplate")
-                                        p.lead 지도를 입력할 수 있는 템플릿
-                                        small 위치를 검색할 수 있는 텍스트 창, 지도 캔버스
+                                //.radio
+                                //    label
+                                //        input#templateRadio(type="radio" value="map" name="selectTemplate")
+                                //        p.lead 지도를 입력할 수 있는 템플릿
+                                //        small 위치를 검색할 수 있는 텍스트 창, 지도 캔버스
 
                             .modal-footer.fontChange
                                 button.btn.btn-default(type='button', data-dismiss='modal') 취소
